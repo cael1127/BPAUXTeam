@@ -1,0 +1,78 @@
+{
+  "name": "bpa-ux-team-2026",
+  "version": "1.0.0",
+  "description": "BPA UX Design Team 2026 - National Sports Championship Series Esports Tournament Platform",
+  "main": "src/App.jsx",
+  "homepage": "https://cael1127.github.io/BPAUXTeam",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cael1127/BPAUXTeam.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext js,jsx --fix",
+    "format": "prettier --write src/**/*.{js,jsx,css,md}",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.263.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.27",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5"
+  },
+  "keywords": [
+    "bpa",
+    "ux-design",
+    "esports",
+    "tournament",
+    "nashville",
+    "valorant",
+    "rocket-league",
+    "super-smash-bros",
+    "react",
+    "tailwindcss",
+    "competition",
+    "nationals"
+  ],
+  "author": {
+    "name": "BPA UX Design Team 2026",
+    "email": "cael1127@github.com",
+    "url": "https://github.com/cael1127"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
+
