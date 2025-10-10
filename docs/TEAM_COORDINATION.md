@@ -53,7 +53,7 @@
 
 **Speaking Points**:
 - "Let me walk you through our interactive prototypes"
-- "Our mobile app features 8 core screens with real-time updates"
+- "Our mobile app features the 5 required screens: live scores, stats, replays, brackets, and chat—all with real-time updates"
 - "Accessibility and responsiveness are built into every interaction"
 
 **Visual Aids**:

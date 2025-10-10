@@ -5,23 +5,23 @@ const BrandingSection = () => {
   return (
     <div className="py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">A. Brand Identity</h1>
+        <div className="text-center mb-12 animate-fade-in">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4 gradient-text">A. Brand Identity</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A dynamic brand system that captures the energy of esports while maintaining professional tournament standards for the 2026 National Sports Championship Series
           </p>
         </div>
 
         {/* Logo Concept */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-12">
+        <div className="bg-white rounded-2xl shadow-xl p-8 mb-12 animate-fade-in stagger-1 hover-lift">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Logo Concept</h2>
           <div className="flex flex-col items-center justify-center">
-            <div className="w-32 h-32 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg">
-              <div className="w-24 h-24 bg-white rounded-xl flex items-center justify-center">
-                <Gamepad2 className="w-12 h-12 text-purple-600" />
+            <div className="w-32 h-32 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg hover-glow transform transition-all duration-500 hover:scale-110 hover:rotate-3">
+              <div className="w-24 h-24 bg-white rounded-xl flex items-center justify-center transition-all duration-300">
+                <Gamepad2 className="w-12 h-12 text-purple-600 transition-transform duration-300 hover:scale-110" />
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center animate-fade-in stagger-2">
               <h3 className="text-xl font-bold text-gray-900">NSCS Logo</h3>
               <p className="text-gray-600">National Sports Championship Series</p>
             </div>
@@ -29,22 +29,22 @@ const BrandingSection = () => {
         </div>
 
         {/* Color Palette */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-12">
+        <div className="bg-white rounded-2xl shadow-xl p-8 mb-12 animate-fade-in stagger-2 hover-lift">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Color Palette</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="w-full h-24 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg mb-2"></div>
-              <h3 className="font-semibold text-gray-900">Primary Gradient</h3>
+            <div className="text-center group animate-fade-in stagger-1">
+              <div className="w-full h-24 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg mb-2 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg cursor-pointer"></div>
+              <h3 className="font-semibold text-gray-900 transition-colors duration-200 group-hover:text-purple-600">Primary Gradient</h3>
               <p className="text-sm text-gray-600">#8B5CF6 → #EC4899</p>
             </div>
-            <div className="text-center">
-              <div className="w-full h-24 bg-gray-900 rounded-lg mb-2"></div>
-              <h3 className="font-semibold text-gray-900">Dark Background</h3>
+            <div className="text-center group animate-fade-in stagger-2">
+              <div className="w-full h-24 bg-gray-900 rounded-lg mb-2 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg cursor-pointer"></div>
+              <h3 className="font-semibold text-gray-900 transition-colors duration-200 group-hover:text-gray-900">Dark Background</h3>
               <p className="text-sm text-gray-600">#111827</p>
             </div>
-            <div className="text-center">
-              <div className="w-full h-24 bg-white border border-gray-200 rounded-lg mb-2"></div>
-              <h3 className="font-semibold text-gray-900">Light Background</h3>
+            <div className="text-center group animate-fade-in stagger-3">
+              <div className="w-full h-24 bg-white border border-gray-200 rounded-lg mb-2 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg cursor-pointer"></div>
+              <h3 className="font-semibold text-gray-900 transition-colors duration-200">Light Background</h3>
               <p className="text-sm text-gray-600">#FFFFFF</p>
             </div>
           </div>

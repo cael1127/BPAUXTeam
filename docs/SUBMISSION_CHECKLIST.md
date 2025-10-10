@@ -94,7 +94,7 @@ BPA_Submission_2026/
 
 ### Mobile Prototype (Figma)
 - [ ] **Resolution**: 375x667 and 414x896 artboards
-- [ ] **Screens**: Minimum 8 screens
+- [ ] **Screens**: Exactly 5 screens required (live scores, stats, replays, brackets, chat)
 - [ ] **Interactions**: Touch-optimized interactions
 - [ ] **Content**: Mobile-appropriate content
 - [ ] **Navigation**: Bottom tab navigation

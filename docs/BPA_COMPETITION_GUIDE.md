@@ -124,9 +124,9 @@
 
 ### Prototype Fidelity
 - **Desktop**: 12 high-fidelity screens
-- **Mobile**: 8 core screens with interactions
-- **Tablet**: 6 hybrid layouts
-- **Social Media**: 15 promotional materials
+- **Mobile**: 5 required screens (live scores, stats, replays, brackets, chat)
+- **Tablet**: 6 hybrid layouts (optional enhancement)
+- **Social Media**: Promotional materials (Twitch/YouTube Gaming)
 
 ## 📱 Deliverable Checklist
 

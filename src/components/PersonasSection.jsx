@@ -63,12 +63,13 @@ const PersonasSection = ({ expandedPersona, setExpandedPersona }) => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {personas.map((persona) => (
+          {personas.map((persona, index) => (
             <div 
               key={persona.id}
-              className={`bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 ${
-                expandedPersona === persona.id ? 'ring-2 ring-purple-500' : ''
+              className={`bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500 card-interactive animate-fade-in ${
+                expandedPersona === persona.id ? 'ring-2 ring-purple-500 shadow-2xl' : ''
               }`}
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="p-6">
                 <div className="flex items-center mb-4">
@@ -86,15 +87,22 @@ const PersonasSection = ({ expandedPersona, setExpandedPersona }) => {
                 
                 <button
                   onClick={() => setExpandedPersona(expandedPersona === persona.id ? null : persona.id)}
-                  className="w-full text-left py-3 text-purple-600 font-medium flex items-center justify-between"
+                  className="w-full text-left py-3 text-purple-600 font-medium flex items-center justify-between transition-all duration-300 hover:bg-purple-50 rounded-lg px-3 -mx-3 group"
                 >
-                  {expandedPersona === persona.id ? 'Show Less' : 'Show Details'}
-                  {expandedPersona === persona.id ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    {expandedPersona === persona.id ? 'Show Less' : 'Show Details'}
+                  </span>
+                  <div className="transition-transform duration-300 group-hover:scale-110">
+                    {expandedPersona === persona.id ? 
+                      <ChevronUp className="w-5 h-5 transition-transform duration-300 group-hover:-translate-y-1" /> : 
+                      <ChevronDown className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1" />
+                    }
+                  </div>
                 </button>
                 
                 {expandedPersona === persona.id && (
-                  <div className="mt-4 space-y-4">
-                    <div>
+                  <div className="mt-4 space-y-4 animate-fade-in">
+                    <div className="animate-slide-in-left stagger-1">
                       <h4 className="font-semibold text-gray-900 mb-2">Goals</h4>
                       <ul className="text-gray-600 space-y-1">
                         {persona.goals.map((goal, index) => (

@@ -15,7 +15,7 @@
 - **Brand Identity**: Professional logo, comprehensive color system, typography hierarchy
 - **User Research**: 25+ interviews, 300+ surveys, 3 detailed personas
 - **Information Architecture**: Complete wireframes, user flows, content hierarchy
-- **Interactive Prototypes**: Desktop (12+ screens) and Mobile (8+ screens)
+- **Interactive Prototypes**: Desktop (12+ screens) and Mobile (5 required screens)
 - **Accessibility**: Full WCAG 2.1 AA compliance across all devices
 - **Presentation Materials**: Strategic 10-minute flow with detailed speaker notes
 - **Documentation**: Comprehensive design rationale and competition guides
@@ -63,12 +63,12 @@
 - **Team Rosters**: Detailed player profiles with statistics
 - **Ticket System**: Secure purchase flow with seat selection
 
-### Mobile App
-- **Live Scores**: Real-time match updates with push notifications
-- **Player Stats**: Individual performance analytics
-- **Match Replays**: On-demand highlights and full matches
-- **Bracket Updates**: Interactive tournament progression
-- **Community Chat**: Team-specific channels with emoji reactions
+### Mobile App (5 Required Screens)
+1. **Live Scores**: Real-time match updates with push notifications
+2. **Stats**: Individual player and team performance analytics
+3. **Replays**: On-demand highlights and full match replays
+4. **Brackets**: Interactive tournament progression visualization
+5. **Chat**: Team-specific community channels with emoji reactions and moderation
 
 ### Social Media Campaign
 - **Twitch Banners**: 1920x1080 promotional materials
