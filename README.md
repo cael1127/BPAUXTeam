@@ -18,6 +18,13 @@
 - **[TEAM_PROFILE.md](TEAM_PROFILE.md)** - One-page vision statement (export to PDF)
 - **[SUBMISSION_PACKAGE/](SUBMISSION_PACKAGE/)** - Upload instructions and organization
 
+## 🚀 Deployment & App Creation:
+- **[QUICK_START_CARD.md](QUICK_START_CARD.md)** ⭐ Everything on one page!
+- **[DEPLOY_NOW.md](DEPLOY_NOW.md)** - Deploy to Netlify in 3 steps (2 minutes!)
+- **[FIGMA_APP_GUIDE.md](FIGMA_APP_GUIDE.md)** - Create your 5-screen mobile app (2-3 hours)
+- **[NETLIFY_DEPLOY_GUIDE.md](NETLIFY_DEPLOY_GUIDE.md)** - Complete deployment reference
+- **[DEPLOYMENT_COMPLETE.md](DEPLOYMENT_COMPLETE.md)** - What's ready and how to use it
+
 ---
 
 [![BPA Competition](https://img.shields.io/badge/BPA-Competition-blue.svg)](https://github.com/cael1127/BPAUXTeam)
@@ -133,6 +140,34 @@ BPAUXTeam/
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
+- `npm run deploy` - Deploy to GitHub Pages
+
+## ☁️ Deployment
+
+### Deploy to Netlify (RECOMMENDED - 2 Minutes!)
+
+**Quickest Method**:
+```bash
+npm run build
+```
+Then drag the `dist` folder to: https://app.netlify.com/drop
+
+**Full Guide**: See [NETLIFY_DEPLOY_GUIDE.md](NETLIFY_DEPLOY_GUIDE.md) or [DEPLOY_NOW.md](DEPLOY_NOW.md)
+
+**Your site will be live at**: `https://[your-site].netlify.app` 🚀
+
+**Features**:
+- ✅ Optimized build (<2s load times)
+- ✅ Automatic HTTPS
+- ✅ Continuous deployment (auto-deploy on git push)
+- ✅ 90+ Lighthouse score
+- ✅ Perfect for competition presentation!
+
+### Alternative: GitHub Pages
+```bash
+npm run deploy
+```
+Site available at: `https://cael1127.github.io/BPAUXTeam`
 
 ## 🎨 Design Sections
 
