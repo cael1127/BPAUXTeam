@@ -3,9 +3,14 @@ import { Gamepad2, MapPin, Phone, Mail, Twitter, Instagram, Youtube, Twitch, Mes
 
 const Footer = () => {
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (sectionId === 'hero') {
+      // Scroll to the very top of the page
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
