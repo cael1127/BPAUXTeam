@@ -101,40 +101,54 @@ const LivestreamsSection = () => {
             </div>
 
             {/* Video Player Mockup */}
-            <div className="relative aspect-video bg-gradient-to-br from-purple-800 to-pink-800 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-24 h-24 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+            <div className="relative aspect-video bg-gradient-to-br from-purple-800 to-pink-800 flex items-center justify-center group">
+              {/* Video Background Pattern */}
+              <div className="absolute inset-0 opacity-20">
+                <div className="absolute top-4 left-4 w-2 h-2 bg-white rounded-full"></div>
+                <div className="absolute top-8 right-8 w-1 h-1 bg-white rounded-full"></div>
+                <div className="absolute bottom-6 left-12 w-1.5 h-1.5 bg-white rounded-full"></div>
+                <div className="absolute bottom-8 right-6 w-1 h-1 bg-white rounded-full"></div>
+              </div>
+              
+              <div className="text-center relative z-10">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   {isPlaying ? (
-                    <Pause className="w-12 h-12 text-white" />
+                    <Pause className="w-10 h-10 sm:w-12 sm:h-12 text-white" />
                   ) : (
-                    <Play className="w-12 h-12 text-white ml-1" />
+                    <Play className="w-10 h-10 sm:w-12 sm:h-12 text-white ml-1" />
                   )}
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Team Phoenix vs Velocity Esports</h3>
-                <p className="text-white/80">Valorant Championship - Grand Finals</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Team Phoenix vs Velocity Esports</h3>
+                <p className="text-white/80 text-sm sm:text-base">Valorant Championship - Grand Finals</p>
+                
+                {/* Live Indicator */}
+                <div className="mt-4 inline-flex items-center px-3 py-1 bg-red-500 text-white rounded-full text-sm font-medium">
+                  <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></div>
+                  LIVE
+                </div>
               </div>
 
               {/* Player Controls */}
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-2 sm:space-x-4">
                   <button
                     onClick={() => setIsPlaying(!isPlaying)}
-                    className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+                    className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
                   >
                     {isPlaying ? (
-                      <Pause className="w-6 h-6 text-white" />
+                      <Pause className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     ) : (
-                      <Play className="w-6 h-6 text-white ml-1" />
+                      <Play className="w-5 h-5 sm:w-6 sm:h-6 text-white ml-1" />
                     )}
                   </button>
                   <button
                     onClick={() => setIsMuted(!isMuted)}
-                    className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+                    className="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
                   >
                     {isMuted ? (
-                      <VolumeX className="w-5 h-5 text-white" />
+                      <VolumeX className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                     ) : (
-                      <Volume2 className="w-5 h-5 text-white" />
+                      <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                     )}
                   </button>
                 </div>

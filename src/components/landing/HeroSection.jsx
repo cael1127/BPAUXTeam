@@ -71,43 +71,43 @@ const HeroSection = () => {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in stagger-1">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in stagger-1">
           <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
             NSCS 2026
           </span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in stagger-2">
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto px-4 animate-fade-in stagger-2">
           The ultimate esports championship featuring the world's best teams in Valorant, Rocket League, and Super Smash Bros Ultimate
         </p>
 
         {/* Event Details */}
-        <div className="flex flex-wrap justify-center items-center gap-8 mb-12 animate-fade-in stagger-3">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-12 animate-fade-in stagger-3 px-4">
           <div className="flex items-center text-white">
-            <Calendar className="w-6 h-6 mr-2 text-purple-400" />
-            <span className="text-lg font-semibold">May 6-10, 2026</span>
+            <Calendar className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-purple-400" />
+            <span className="text-base sm:text-lg font-semibold">May 6-10, 2026</span>
           </div>
           <div className="flex items-center text-white">
-            <MapPin className="w-6 h-6 mr-2 text-pink-400" />
-            <span className="text-lg font-semibold">Nashville, TN</span>
+            <MapPin className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-pink-400" />
+            <span className="text-base sm:text-lg font-semibold">Nashville, TN</span>
           </div>
           <div className="flex items-center text-white">
-            <Users className="w-6 h-6 mr-2 text-blue-400" />
-            <span className="text-lg font-semibold">52 Teams</span>
+            <Users className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-blue-400" />
+            <span className="text-base sm:text-lg font-semibold">52 Teams</span>
           </div>
         </div>
 
         {/* Countdown Timer */}
-        <div className="mb-12 animate-fade-in stagger-4">
-          <h3 className="text-2xl font-bold text-white mb-6">Championship Starts In:</h3>
-          <div className="flex justify-center gap-4 md:gap-8">
+        <div className="mb-12 animate-fade-in stagger-4 px-4">
+          <h3 className="text-xl sm:text-2xl font-bold text-white mb-6">Championship Starts In:</h3>
+          <div className="flex justify-center gap-2 sm:gap-4 md:gap-8">
             {Object.entries(timeLeft).map(([unit, value]) => (
               <div key={unit} className="text-center">
-                <div className="w-20 h-20 md:w-24 md:h-24 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center border border-white/20">
-                  <span className="text-2xl md:text-3xl font-bold text-white">{value}</span>
+                <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center border border-white/20">
+                  <span className="text-lg sm:text-2xl md:text-3xl font-bold text-white">{value}</span>
                 </div>
-                <p className="text-white/80 mt-2 text-sm md:text-base capitalize">{unit}</p>
+                <p className="text-white/80 mt-2 text-xs sm:text-sm md:text-base capitalize">{unit}</p>
               </div>
             ))}
           </div>

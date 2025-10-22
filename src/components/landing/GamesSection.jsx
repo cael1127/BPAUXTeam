@@ -17,17 +17,17 @@ const GamesSection = () => {
         </div>
 
         {/* Games Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
           {games.map((game, index) => (
             <div key={index} className="group relative">
               <div className="bg-white rounded-3xl shadow-xl overflow-hidden transform group-hover:scale-105 transition-all duration-500 hover:shadow-2xl">
                 {/* Game Header */}
-                <div className={`h-48 bg-gradient-to-br ${game.color} relative overflow-hidden`}>
+                <div className={`h-40 sm:h-48 bg-gradient-to-br ${game.color} relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-black/20"></div>
-                  <div className="absolute top-6 left-6">
-                    <div className="text-6xl mb-4">{game.icon}</div>
-                    <h3 className="text-2xl font-bold text-white">{game.name}</h3>
-                    <p className="text-white/90 text-sm">{game.genre}</p>
+                  <div className="absolute top-4 sm:top-6 left-4 sm:left-6">
+                    <div className="text-4xl sm:text-6xl mb-2 sm:mb-4">{game.icon}</div>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white">{game.name}</h3>
+                    <p className="text-white/90 text-xs sm:text-sm">{game.genre}</p>
                   </div>
                   <div className="absolute top-6 right-6">
                     <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
@@ -49,8 +49,8 @@ const GamesSection = () => {
                 </div>
 
                 {/* Game Content */}
-                <div className="p-8">
-                  <p className="text-gray-600 mb-6 leading-relaxed">{game.description}</p>
+                <div className="p-6 sm:p-8">
+                  <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">{game.description}</p>
                   
                   {/* Game Features */}
                   <div className="mb-6">

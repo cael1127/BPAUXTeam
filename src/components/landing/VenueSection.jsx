@@ -53,12 +53,42 @@ const VenueSection = () => {
             </div>
             
             <div className="relative">
-              <div className="aspect-video bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 text-purple-500 mx-auto mb-4" />
-                  <p className="text-lg font-semibold text-gray-700">Interactive Map</p>
-                  <p className="text-gray-600">Click to explore the venue</p>
+              <div 
+                className="aspect-video bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl flex items-center justify-center relative overflow-hidden group cursor-pointer hover:shadow-lg transition-all duration-300"
+                onClick={() => window.open('https://maps.google.com/?q=Music+City+Center+Nashville+TN', '_blank')}
+              >
+                {/* Map Background with Pattern */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-green-100"></div>
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all duration-300"></div>
+                
+                {/* Map Grid Pattern */}
+                <div className="absolute inset-0 opacity-20">
+                  <div className="grid grid-cols-8 grid-rows-6 h-full">
+                    {[...Array(48)].map((_, i) => (
+                      <div key={i} className="border border-gray-300/30"></div>
+                    ))}
+                  </div>
                 </div>
+                
+                {/* Map Content */}
+                <div className="relative z-10 text-center">
+                  <MapPin className="w-16 h-16 text-purple-500 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                  <p className="text-lg font-semibold text-gray-700 mb-2">Music City Center</p>
+                  <p className="text-gray-600 text-sm mb-4">201 5th Ave S, Nashville, TN</p>
+                  <div className="inline-flex items-center px-4 py-2 bg-purple-500 text-white rounded-lg text-sm font-medium group-hover:bg-purple-600 transition-colors">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    View on Google Maps
+                  </div>
+                </div>
+                
+                {/* Interactive Elements */}
+                <div className="absolute top-4 right-4 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                <div className="absolute bottom-4 left-4 text-xs text-gray-500 bg-white/80 px-2 py-1 rounded">
+                  Click to explore
+                </div>
+                
+                {/* Hover Effect Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
           </div>

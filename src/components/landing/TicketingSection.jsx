@@ -51,7 +51,7 @@ const TicketingSection = () => {
         </div>
 
         {/* Ticket Tiers */}
-        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 mb-16">
           {ticketTiers.map((tier) => (
             <div key={tier.id} className={`relative bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 ${
               tier.popular ? 'ring-2 ring-purple-500' : ''
@@ -62,20 +62,20 @@ const TicketingSection = () => {
                 </div>
               )}
               
-              <div className={`h-32 bg-gradient-to-r ${tier.color} relative overflow-hidden`}>
+              <div className={`h-28 sm:h-32 bg-gradient-to-r ${tier.color} relative overflow-hidden`}>
                 <div className="absolute inset-0 bg-black/20"></div>
-                <div className="absolute top-4 left-4">
-                  <div className="text-4xl mb-2">{tier.icon}</div>
-                  <h3 className="text-xl font-bold text-white">{tier.name}</h3>
-                  <p className="text-white/90 text-sm">{tier.type}</p>
+                <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
+                  <div className="text-3xl sm:text-4xl mb-1 sm:mb-2">{tier.icon}</div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white">{tier.name}</h3>
+                  <p className="text-white/90 text-xs sm:text-sm">{tier.type}</p>
                 </div>
-                <div className="absolute top-4 right-4 text-right">
-                  <div className="text-3xl font-bold text-white">{tier.price}</div>
+                <div className="absolute top-3 sm:top-4 right-3 sm:right-4 text-right">
+                  <div className="text-2xl sm:text-3xl font-bold text-white">{tier.price}</div>
                   {tier.originalPrice && (
-                    <div className="text-white/70 line-through text-sm">{tier.originalPrice}</div>
+                    <div className="text-white/70 line-through text-xs sm:text-sm">{tier.originalPrice}</div>
                   )}
                   {tier.discount && (
-                    <div className="text-yellow-300 font-bold text-sm">{tier.discount} OFF</div>
+                    <div className="text-yellow-300 font-bold text-xs sm:text-sm">{tier.discount} OFF</div>
                   )}
                 </div>
               </div>

@@ -51,12 +51,12 @@ const ScheduleSection = () => {
         </div>
 
         {/* Day Selector */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-6 sm:mb-8">
           {days.map((day) => (
             <button
               key={day}
               onClick={() => setSelectedDay(day)}
-              className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all duration-300 text-sm sm:text-base ${
                 selectedDay === day
                   ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -68,12 +68,12 @@ const ScheduleSection = () => {
         </div>
 
         {/* Game Filter */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-8 sm:mb-12">
           {games.map((game) => (
             <button
               key={game}
               onClick={() => setFilterGame(game)}
-              className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+              className={`px-3 sm:px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm sm:text-base ${
                 filterGame === game
                   ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -87,9 +87,9 @@ const ScheduleSection = () => {
         {/* Schedule Content */}
         {currentDay && (
           <div className="mb-16">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">{currentDay.date}</h3>
-              <p className="text-gray-600">{filteredEvents.length} matches scheduled</p>
+            <div className="text-center mb-6 sm:mb-8">
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{currentDay.date}</h3>
+              <p className="text-gray-600 text-sm sm:text-base">{filteredEvents.length} matches scheduled</p>
             </div>
 
             {/* Events Timeline */}

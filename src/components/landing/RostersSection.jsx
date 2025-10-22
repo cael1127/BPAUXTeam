@@ -79,17 +79,17 @@ const RostersSection = () => {
         </div>
 
         {/* Teams Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-16">
           {filteredTeams.map((team, index) => (
             <div key={team.id} className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
               {/* Team Header */}
-              <div className={`h-32 bg-gradient-to-r ${team.color} relative overflow-hidden`}>
+              <div className={`h-28 sm:h-32 bg-gradient-to-r ${team.color} relative overflow-hidden`}>
                 <div className="absolute inset-0 bg-black/20"></div>
-                <div className="absolute top-4 left-4">
-                  <div className="text-4xl mb-2">{team.logo}</div>
-                  <h3 className="text-xl font-bold text-white">{team.name}</h3>
-                  <div className="flex items-center text-white/90 text-sm">
-                    <MapPin className="w-4 h-4 mr-1" />
+                <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
+                  <div className="text-3xl sm:text-4xl mb-1 sm:mb-2">{team.logo}</div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white">{team.name}</h3>
+                  <div className="flex items-center text-white/90 text-xs sm:text-sm">
+                    <MapPin className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                     {team.region}
                   </div>
                 </div>
@@ -101,7 +101,7 @@ const RostersSection = () => {
               </div>
 
               {/* Team Content */}
-              <div className="p-6">
+              <div className="p-4 sm:p-6">
                 {/* Players */}
                 <div className="mb-4">
                   <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
