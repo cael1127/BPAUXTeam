@@ -10,7 +10,6 @@ const Footer = () => {
   };
 
   const quickLinks = [
-    { name: 'Home', id: 'hero' },
     { name: 'Games', id: 'games' },
     { name: 'Teams', id: 'rosters' },
     { name: 'Watch Live', id: 'livestreams' },

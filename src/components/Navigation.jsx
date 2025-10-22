@@ -3,7 +3,6 @@ import { Gamepad2, Menu, X, Ticket, Play, Users } from 'lucide-react';
 
 const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   const navigationItems = [
-    { name: 'Home', id: 'hero' },
     { name: 'Games', id: 'games' },
     { name: 'Teams', id: 'rosters' },
     { name: 'Watch Live', id: 'livestreams' },
