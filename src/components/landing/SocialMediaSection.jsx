@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Download, Share2, Heart, MessageCircle, Eye, ExternalLink, Instagram, Twitter, Youtube, Twitch, Discord } from 'lucide-react';
+import { Download, Share2, Heart, MessageCircle, Eye, ExternalLink, Instagram, Twitter, Youtube, Twitch } from 'lucide-react';
 
 const SocialMediaSection = () => {
   const [activePlatform, setActivePlatform] = useState('twitch');
@@ -9,7 +9,7 @@ const SocialMediaSection = () => {
     { id: 'youtube', name: 'YouTube Gaming', icon: Youtube, color: 'from-red-500 to-red-700' },
     { id: 'twitter', name: 'Twitter', icon: Twitter, color: 'from-blue-400 to-blue-600' },
     { id: 'instagram', name: 'Instagram', icon: Instagram, color: 'from-pink-500 to-purple-600' },
-    { id: 'discord', name: 'Discord', icon: Discord, color: 'from-indigo-500 to-indigo-700' }
+    { id: 'discord', name: 'Discord', icon: MessageCircle, color: 'from-indigo-500 to-indigo-700' }
   ];
 
   const artboards = [

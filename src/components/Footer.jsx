@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gamepad2, MapPin, Phone, Mail, Twitter, Instagram, Youtube, Twitch, Discord } from 'lucide-react';
+import { Gamepad2, MapPin, Phone, Mail, Twitter, Instagram, Youtube, Twitch, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (sectionId) => {
@@ -25,7 +25,7 @@ const Footer = () => {
     { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Youtube, href: '#', label: 'YouTube' },
     { icon: Twitch, href: '#', label: 'Twitch' },
-    { icon: Discord, href: '#', label: 'Discord' }
+    { icon: MessageCircle, href: '#', label: 'Discord' }
   ];
 
   return (

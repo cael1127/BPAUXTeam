@@ -97,7 +97,7 @@ const MobileAppSection = () => {
                 <div className="px-6 py-4 h-full">
                   <div className="text-center mb-6">
                     <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r ${screens[activeScreen].color} flex items-center justify-center`}>
-                      <screens[activeScreen].icon className="w-8 h-8 text-white" />
+                      {React.createElement(screens[activeScreen].icon, { className: "w-8 h-8 text-white" })}
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">{screens[activeScreen].title}</h3>
                     <p className="text-gray-400 text-sm">{screens[activeScreen].description}</p>
