@@ -21,7 +21,7 @@ const App = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <Navigation 
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
@@ -41,7 +41,7 @@ const App = () => {
       <MobileAppSection />
       <SocialMediaSection />
       <NewsletterSection />
-      
+
       <Footer />
     </div>
   );
