@@ -1,223 +1,53 @@
-# BPA UX Design Team - Nationals Competition 2026
+# NSCS 2026 - BPA UX Design Competition
 
-**National Sports Championship Series** - A comprehensive UX design solution for the 2026 BPA User Experience Design Team competition.
+**National Esports Championship Series 2026** - A comprehensive promotional landing page for the BPA User Experience Design Team competition.
 
-## 🚀 **NATIONALS READY!** Start Here:
-- **[START_HERE.md](START_HERE.md)** - Your quick start guide to nationals victory
-- **[NATIONALS_READY_SUMMARY.md](NATIONALS_READY_SUMMARY.md)** - Complete overview of all improvements (READ FIRST!)
-- **[NATIONALS_READINESS_CHECKLIST.md](NATIONALS_READINESS_CHECKLIST.md)** - Master verification checklist
+## 🚀 Quick Start
 
-## ⚠️ CRITICAL Documents (Disqualification Prevention):
-- **[COPYRIGHT_COMPLIANCE.md](COPYRIGHT_COMPLIANCE.md)** - Copyright and fair use documentation (REQUIRED!)
-- **[WORKS_CITED.md](WORKS_CITED.md)** - Complete attribution list (REQUIRED!)
-
-## 📚 Essential Preparation Materials:
-- **[Q&A_PREPARATION.md](Q&A_PREPARATION.md)** - Content mastery for 55 points (45+10)!
-- **[PRESENTATION_COACHING.md](PRESENTATION_COACHING.md)** - Delivery excellence guide (15 pts)
-- **[presentation/PRESENTATION_SLIDES_GUIDE.md](presentation/PRESENTATION_SLIDES_GUIDE.md)** - Complete slide breakdown
-- **[TEAM_PROFILE.md](TEAM_PROFILE.md)** - One-page vision statement (export to PDF)
-- **[SUBMISSION_PACKAGE/](SUBMISSION_PACKAGE/)** - Upload instructions and organization
-
-## 🚀 Deployment & App Creation:
-- **[QUICK_START_CARD.md](QUICK_START_CARD.md)** ⭐ Everything on one page!
-- **[DEPLOY_NOW.md](DEPLOY_NOW.md)** - Deploy to Netlify in 3 steps (2 minutes!)
-- **[FIGMA_APP_GUIDE.md](FIGMA_APP_GUIDE.md)** - Create your 5-screen mobile app (2-3 hours)
-- **[NETLIFY_DEPLOY_GUIDE.md](NETLIFY_DEPLOY_GUIDE.md)** - Complete deployment reference
-- **[DEPLOYMENT_COMPLETE.md](DEPLOYMENT_COMPLETE.md)** - What's ready and how to use it
-
----
-
-[![BPA Competition](https://img.shields.io/badge/BPA-Competition-blue.svg)](https://github.com/cael1127/BPAUXTeam)
-[![UX Design](https://img.shields.io/badge/UX-Design-purple.svg)](https://github.com/cael1127/BPAUXTeam)
-[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-3.3.3-blue.svg)](https://tailwindcss.com/)
-
-## 🎯 Project Overview
-
-This project presents a complete UX design solution for the **2026 National Sports Championship Series** - an annual esports tournament in Nashville featuring games like Valorant, Rocket League, and Super Smash Bros. Created as a competition-ready entry for the BPA UX Design Competition, this solution encompasses all required deliverables including brand identity, user research, information architecture, interactive prototypes, and presentation strategy.
-
-## 🏆 BPA Competition Alignment - Nationals Ready
-
-This project directly addresses the 2026 BPA topic requirements with nationals-level excellence:
-
-### ✅ **Required Deliverables (100% Complete)**
-- **Branding & Identity**: Professional logo concept, comprehensive color palette, typography hierarchy with 6 weight variations
-- **Digital Experience Suite**: High-fidelity promotional landing page, interactive mobile app prototype (5 required screens), complete social media campaign
-- **UX Architecture**: Detailed wireframes, comprehensive user flows, complete information hierarchy with wireframe mockups
-- **User Research & Personas**: 3 detailed personas with research methodology, goals, frustrations, and interaction patterns
-- **Accessibility & Device Adaptation**: Full WCAG 2.1 AA compliance, responsive design across 5 breakpoints
-- **Design Tools & Deliverables**: Specific tool recommendations, linkable mockups, high-resolution PNG artboards, complete Works Cited
-- **Presentation & Judging Strategy**: Strategic 10-minute presentation flow with detailed team roles and speaking notes
-
-### 🎯 **Nationals-Level Enhancements**
-- **Optional Enhancements**: Live interactive bracket, gamified fan points system, 3D arena map view
-- **Competition Documentation**: Comprehensive BPA competition guide and submission checklist
-- **Design Rationale**: Detailed documentation of every design decision with research backing
-- **Quality Assurance**: Complete submission checklist ensuring perfection at nationals level
-
-### 📊 **Competition-Winning Metrics**
-- **User Research**: 25+ interviews, 300+ survey responses, 12 usability test participants
-- **Business Impact**: 40% engagement increase, 25% revenue growth, 30% support reduction
-- **Technical Excellence**: <2s load times, 100% accessibility compliance, 5-device responsive
-- **Design Quality**: Professional design system with 50+ components, consistent brand identity
-
-## 🏗️ Project Structure
-
-```
-BPAUXTeam/
-├── src/                          # React application source code
-│   ├── components/               # React components
-│   │   ├── Navigation.jsx
-│   │   ├── BrandingSection.jsx
-│   │   ├── PersonasSection.jsx
-│   │   ├── ArchitectureSection.jsx
-│   │   ├── UXFlowSection.jsx
-│   │   ├── AccessibilitySection.jsx
-│   │   ├── PrototypeSection.jsx
-│   │   ├── PresentationSection.jsx
-│   │   ├── OptionalEnhancementsSection.jsx
-│   │   └── Footer.jsx
-│   ├── data/                     # Mock data and constants
-│   │   ├── personas.js
-│   │   ├── games.js
-│   │   └── mobileScreens.js
-│   ├── App.jsx                   # Main application component
-│   ├── main.jsx                  # Application entry point
-│   └── index.css                 # Global styles
-├── docs/                         # Competition documentation
-│   ├── BPA_COMPETITION_GUIDE.md
-│   ├── DESIGN_RATIONALE.md
-│   ├── SUBMISSION_CHECKLIST.md
-│   └── TEAM_COORDINATION.md
-├── assets/                       # Design assets and images
-│   ├── logos/
-│   ├── screenshots/
-│   └── social-media/
-├── prototypes/                   # Figma prototype files
-│   ├── Desktop_Prototype.fig
-│   ├── Mobile_Prototype.fig
-│   └── Social_Media_Assets.fig
-├── presentation/                 # Presentation materials
-│   ├── slides/
-│   ├── speaker-notes/
-│   └── demo-videos/
-└── deliverables/                 # Final competition deliverables
-    ├── PNG_Artboards/
-    ├── Design_System/
-    └── Works_Cited/
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (version 16 or higher)
-- npm or yarn package manager
-
-### Installation
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/cael1127/BPAUXTeam.git
-   cd BPAUXTeam
-   ```
-
-2. Install dependencies:
+1. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. Start the development server:
+2. **Start development server:**
    ```bash
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:3000`
+3. **Open your browser:**
+   Navigate to `http://localhost:3000`
 
-### Available Scripts
+## 📁 Project Structure
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run deploy` - Deploy to GitHub Pages
-
-## ☁️ Deployment
-
-### Deploy to Netlify (RECOMMENDED - 2 Minutes!)
-
-**Quickest Method**:
-```bash
-npm run build
 ```
-Then drag the `dist` folder to: https://app.netlify.com/drop
-
-**Full Guide**: See [NETLIFY_DEPLOY_GUIDE.md](NETLIFY_DEPLOY_GUIDE.md) or [DEPLOY_NOW.md](DEPLOY_NOW.md)
-
-**Your site will be live at**: `https://[your-site].netlify.app` 🚀
-
-**Features**:
-- ✅ Optimized build (<2s load times)
-- ✅ Automatic HTTPS
-- ✅ Continuous deployment (auto-deploy on git push)
-- ✅ 90+ Lighthouse score
-- ✅ Perfect for competition presentation!
-
-### Alternative: GitHub Pages
-```bash
-npm run deploy
+BPAUXTeam/
+├── src/                          # React application
+│   ├── components/               # React components
+│   │   ├── landing/             # Landing page sections (13 total)
+│   │   ├── Navigation.jsx       # Main navigation
+│   │   └── Footer.jsx           # Site footer
+│   ├── data/                    # Mock data and constants
+│   └── App.jsx                  # Main application
+├── competition-guides/          # BPA competition documentation
+├── deployment-docs/             # Deployment instructions
+├── team-resources/              # Team coordination materials
+├── docs/                        # Technical documentation
+└── presentation/                # Presentation materials
 ```
-Site available at: `https://cael1127.github.io/BPAUXTeam`
 
-## 🎨 Design Sections
+## 🎯 BPA Competition Deliverables
 
-### 1. Brand Identity
-- Logo concept and visual identity
-- Color palette and typography hierarchy
-- Visual style guide with gradients and iconography
-- Layout rhythm and spacing systems
+### ✅ Required Elements
+- **Promotional Landing Page** - 13 comprehensive sections
+- **Mobile App Prototype** - 5-screen showcase (Live Scores, Stats, Replays, Brackets, Chat)
+- **Social Media Campaign** - Downloadable artboards for Twitch/YouTube Gaming
 
-### 2. User Personas & Research
-- Three key user segments: Casual Fan, Competitive Player, Event Organizer
-- Detailed user goals, frustrations, and interaction patterns
-- Research insights informing design decisions
-- Comprehensive methodology documentation
-
-### 3. Information Architecture
-- Desktop and mobile navigation structures
-- Content hierarchy and feature organization
-- Interactive mobile screen demonstrations
-- Detailed wireframes and user flows
-
-### 4. UI/UX Flow
-- Desktop and mobile user journey mapping
-- Transition and animation specifications
-- Micro-interaction design patterns
-- Detailed user journey maps
-
-### 5. Accessibility & Responsiveness
-- WCAG 2.1 AA compliance features
-- Responsive design breakpoints
-- Assistive technology support
-- Device adaptation strategy
-
-### 6. Prototype Plan
-- Recommended design tools (Figma, Adobe XD, Moqups, Wondershare Mockitt)
-- Deliverable specifications
-- Asset licensing information
-- Complete submission guidelines
-
-### 7. Presentation Flow
-- Team roles and responsibilities
-- 10-minute presentation timeline
-- Key presentation slides outline
-- Detailed speaking notes
-
-### 8. Optional Enhancements
-- Live interactive bracket display
-- Gamified fan points system
-- 3D esports arena map view
-- AI-powered features
+### 🏆 Competition Features
+- **52 Competing Teams** across 3 games (Valorant, Rocket League, Super Smash Bros)
+- **$1M+ Prize Pool** with detailed breakdown
+- **Nashville Venue** with accessibility features
+- **Interactive Elements** - Countdown timer, live streams, ticket purchasing
+- **Responsive Design** - Mobile, tablet, and desktop optimized
 
 ## 🛠️ Technologies Used
 
@@ -225,183 +55,28 @@ Site available at: `https://cael1127.github.io/BPAUXTeam`
 - **Vite** - Build tool and development server
 - **Tailwind CSS** - Utility-first CSS framework
 - **Lucide React** - Icon library
-- **Inter Font** - Typography
 
-## 📱 Features
+## 📚 Documentation
 
-### ✨ **Professional UX Excellence**
-- **Smooth Animations** - 60fps animations with GPU acceleration
-- **Micro-Interactions** - Delightful hover states, focus indicators, and transitions
-- **Loading States** - Professional skeleton screens and loading spinners
-- **Toast Notifications** - Immediate feedback for all user actions
-- **Scroll Animations** - Reveal effects as content enters viewport
+- **[Competition Guides](competition-guides/)** - BPA preparation materials
+- **[Team Resources](team-resources/)** - Team coordination and presentation guides
+- **[Deployment Docs](deployment-docs/)** - How to deploy the application
+- **[Technical Docs](docs/)** - Design rationale and UX best practices
 
-### 🎯 **Core Functionality**
-- **Responsive Design** - Optimized for desktop, tablet, and mobile (5 breakpoints)
-- **Interactive Navigation** - Smooth section transitions with gradient effects
-- **Accessibility** - Full WCAG 2.1 AA compliance with keyboard navigation
-- **Modern UI** - Clean, professional design system with consistent spacing
-- **Component Architecture** - Modular, maintainable, reusable components
+## 🎨 Design Highlights
 
-### ♿ **Accessibility Features**
-- **Focus Indicators** - Clear 3px purple outline on all interactive elements
-- **Screen Reader Support** - ARIA labels and semantic HTML throughout
-- **Keyboard Navigation** - 100% keyboard accessible with logical tab order
-- **Reduced Motion** - Respects prefers-reduced-motion for users with vestibular disorders
-- **High Contrast** - All elements exceed 4.5:1 contrast ratio
-
-## 🎯 Target Users
-
-1. **Alex Chen (Casual Fan)** - Mobile-first, community-focused
-2. **Jordan Taylor (Competitive Player)** - Data-driven, performance-focused
-3. **Morgan Rivera (Event Organizer)** - Admin-focused, real-time monitoring
-
-## 📋 BPA Competition Requirements
-
-This project addresses all BPA UX Design Competition requirements with nationals-level excellence:
-
-### ✅ **Core Requirements (100% Complete)**
-- **Brand Identity & Visual Design**: Professional logo, comprehensive color system, typography hierarchy
-- **User Research & Personas**: 3 detailed personas with research methodology and validation
-- **Information Architecture**: Complete wireframes, user flows, and content hierarchy
-- **UI/UX Flow Design**: Desktop and mobile user journeys with detailed interactions
-- **Accessibility Considerations**: Full WCAG 2.1 AA compliance with assistive technology support
-- **Prototype Planning**: Specific tool recommendations with deliverable specifications
-- **Presentation Structure**: Strategic 10-minute flow with detailed speaker notes
-
-### 📚 **Competition Documentation**
-- **[BPA Competition Guide](docs/BPA_COMPETITION_GUIDE.md)**: Comprehensive nationals preparation guide
-- **[Design Rationale](docs/DESIGN_RATIONALE.md)**: Detailed documentation of all design decisions
-- **[Submission Checklist](docs/SUBMISSION_CHECKLIST.md)**: Complete quality assurance checklist
-- **[Team Coordination](docs/TEAM_COORDINATION.md)**: Strategic presentation flow with detailed speaker notes
-- **[UX Best Practices](docs/UX_BEST_PRACTICES.md)**: Professional UX implementation guidelines
-- **[UX Enhancements Summary](docs/UX_ENHANCEMENTS_SUMMARY.md)**: Complete list of all professional enhancements
-- **Team Coordination**: Clear roles, responsibilities, and presentation timing
-- **Success Metrics**: Quantifiable goals and performance indicators
-
-## 🏆 Competition Presentation
-
-The project includes a comprehensive 10-minute presentation structure with:
-- Clear team member roles and responsibilities
-- Detailed speaking notes for each section
-- Strategic timing and handoff coordination
-- Q&A preparation and response strategies
-
-## 📊 Key Metrics
-
-### User Research Data
-- **Sample Size**: 25+ user interviews, 300+ survey responses
-- **Demographics**: 18-35 age range, 60% mobile users
-- **Key Insights**: 78% prefer mobile, 85% want real-time updates
-- **Validation**: 90% user satisfaction in testing
-
-### Business Impact Projections
-- **User Engagement**: 40% increase in daily active users
-- **Revenue Growth**: 25% improvement in ticket sales
-- **Cost Savings**: 30% reduction in customer support tickets
-- **Market Expansion**: 200% growth potential over 3 years
-
-### Technical Achievements
-- **Accessibility**: WCAG 2.1 AA compliant
-- **Performance**: <2 second load times
-- **Responsive**: 5 breakpoints (320px to 4K)
-- **Cross-Platform**: iOS, Android, Web compatibility
-
-## 🎨 Design System Excellence
-
-### Brand Identity
-- **Logo**: Scalable vector design with 5 size variations
-- **Color Palette**: 12-color system with accessibility compliance
-- **Typography**: Inter font family with 6 weight variations
-- **Iconography**: 50+ custom icons with consistent style
-
-### Component Library
-- **Buttons**: 8 variations with hover/focus states
-- **Cards**: 6 layouts for different content types
-- **Navigation**: 3 responsive navigation patterns
-- **Forms**: Complete form system with validation
-
-### Prototype Fidelity
-- **Desktop**: 12 high-fidelity screens
-- **Mobile**: 5 required screens with interactions (live scores, stats, replays, brackets, chat)
-- **Tablet**: 6 hybrid layouts
-- **Social Media**: 15 promotional materials
-
-## 🏅 Competition Day Tips
-
-### Team Coordination
-- **Practice Handoffs**: Smooth transitions between speakers
-- **Backup Plans**: Prepare for technology failures
-- **Time Management**: Use visible timer, practice pacing
-- **Confidence**: Maintain professional demeanor throughout
-
-### Presentation Techniques
-- **Storytelling**: Use narrative structure to engage judges
-- **Visual Impact**: High-quality visuals and smooth animations
-- **Live Demos**: Interactive prototype demonstrations
-- **Data Visualization**: Clear charts and statistics
-
-### Q&A Mastery
-- **Anticipate Questions**: Prepare for common scenarios
-- **Technical Depth**: Understand every design decision
-- **Business Acumen**: Connect design to business outcomes
-- **Future Thinking**: Demonstrate strategic vision
-
-## 📈 Success Metrics
-
-### Immediate Goals
-- **Advance to Nationals**: Top 3 at state level
-- **Perfect Score**: 100% on all judging criteria
-- **Judge Feedback**: Positive comments on innovation
-- **Team Recognition**: Standout presentation quality
-
-### Long-term Impact
-- **Portfolio Enhancement**: Strong case study for future opportunities
-- **Industry Recognition**: Potential for design awards
-- **Career Advancement**: Networking and job opportunities
-- **Skill Development**: Advanced UX/UI capabilities
-
-## 🚀 Final Preparation Checklist
-
-### 1 Week Before
-- [ ] Final prototype testing and bug fixes
-- [ ] Presentation rehearsal with timer
-- [ ] Backup file preparation
-- [ ] Team coordination meeting
-
-### Day Before
-- [ ] Technology setup and testing
-- [ ] Final presentation run-through
-- [ ] Rest and mental preparation
-- [ ] Review key talking points
-
-### Competition Day
-- [ ] Arrive early for setup
-- [ ] Final team briefing
-- [ ] Confident presentation delivery
-- [ ] Professional Q&A responses
-
-## 📄 License
-
-This project is created for educational purposes as part of the BPA UX Design Competition. All design assets and code are original work unless otherwise specified.
-
-## 👥 Team
-
-**BPA UX Design Competition Entry 2026**
-- **Brand Identity Lead**: Visual design and brand strategy
-- **UX Research Lead**: User research and information architecture
-- **Prototype Lead**: Interactive design and technical implementation
-- **Strategy Lead**: Business impact and future vision
+- **Modern UI/UX** - Glassmorphism, gradients, micro-interactions
+- **Accessibility** - WCAG 2.1 AA compliant
+- **Performance** - Optimized for fast loading
+- **Cross-Platform** - Seamless experience across devices
 
 ## 📞 Contact
 
-For questions about this project or BPA competition preparation:
-- **Repository**: [https://github.com/cael1127/BPAUXTeam](https://github.com/cael1127/BPAUXTeam)
-- **Competition Guide**: See `docs/BPA_COMPETITION_GUIDE.md`
-- **Team Coordination**: See `docs/TEAM_COORDINATION.md`
+**BPA UX Design Competition Entry 2026**
+- **Repository**: [GitHub Repository]
+- **Competition**: BPA User Experience Design Team
+- **Event**: National Esports Championship Series 2026
 
 ---
 
-**National Sports Championship Series © 2026 | BPA UX Design Competition Entry**
-
-*This project represents the culmination of comprehensive UX research, innovative design thinking, and strategic business planning to create a winning solution for the 2026 BPA User Experience Design Team competition.*
+*This project represents a comprehensive UX design solution for the 2026 BPA User Experience Design Team competition, showcasing professional design principles and modern web development practices.*

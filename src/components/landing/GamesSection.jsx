@@ -1,0 +1,135 @@
+import React from 'react';
+import { Play, Trophy, Users, Clock, Zap, Target } from 'lucide-react';
+import { games } from '../../data/games';
+
+const GamesSection = () => {
+  return (
+    <section id="games" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Featured <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Games</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Three of the most competitive esports titles will be showcased, featuring the world's best teams competing for championship glory.
+          </p>
+        </div>
+
+        {/* Games Grid */}
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          {games.map((game, index) => (
+            <div key={index} className="group relative">
+              <div className="bg-white rounded-3xl shadow-xl overflow-hidden transform group-hover:scale-105 transition-all duration-500 hover:shadow-2xl">
+                {/* Game Header */}
+                <div className={`h-48 bg-gradient-to-br ${game.color} relative overflow-hidden`}>
+                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute top-6 left-6">
+                    <div className="text-6xl mb-4">{game.icon}</div>
+                    <h3 className="text-2xl font-bold text-white">{game.name}</h3>
+                    <p className="text-white/90 text-sm">{game.genre}</p>
+                  </div>
+                  <div className="absolute top-6 right-6">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+                      <span className="text-white font-bold text-lg">{game.prizePool}</span>
+                    </div>
+                  </div>
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <div className="flex items-center justify-between text-white/90 text-sm">
+                      <div className="flex items-center">
+                        <Users className="w-4 h-4 mr-1" />
+                        {game.teams} Teams
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="w-4 h-4 mr-1" />
+                        {game.duration}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Game Content */}
+                <div className="p-8">
+                  <p className="text-gray-600 mb-6 leading-relaxed">{game.description}</p>
+                  
+                  {/* Game Features */}
+                  <div className="mb-6">
+                    <h4 className="font-semibold text-gray-900 mb-3">Key Features:</h4>
+                    <div className="grid grid-cols-1 gap-2">
+                      {game.features.slice(0, 3).map((feature, featureIndex) => (
+                        <div key={featureIndex} className="flex items-center text-sm text-gray-600">
+                          <div className="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></div>
+                          {feature}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Tournament Info */}
+                  <div className="space-y-3 mb-6">
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="text-sm font-medium text-gray-500">Format</span>
+                      <span className="text-sm text-gray-900">{game.format}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                      <span className="text-sm font-medium text-gray-500">Developer</span>
+                      <span className="text-sm text-gray-900">{game.developer}</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span className="text-sm font-medium text-gray-500">Platforms</span>
+                      <span className="text-sm text-gray-900">{game.platforms.join(', ')}</span>
+                    </div>
+                  </div>
+
+                  {/* CTA Button */}
+                  <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 flex items-center justify-center group">
+                    <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                    Watch Matches
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Tournament Overview */}
+        <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Tournament Overview</h3>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Each game features a unique tournament format designed to showcase the highest level of competitive play and ensure the most exciting matches for fans.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                <Trophy className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Championship Format</h4>
+              <p className="text-gray-600">Each game uses a specialized tournament format optimized for maximum excitement and fair competition.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center">
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Live Spectating</h4>
+              <p className="text-gray-600">Advanced spectator features provide multiple viewing angles and real-time statistics for each game.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
+                <Target className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Professional Standards</h4>
+              <p className="text-gray-600">All matches follow professional esports standards with certified referees and anti-cheat systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default GamesSection;
