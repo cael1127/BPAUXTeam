@@ -42,7 +42,7 @@ const TicketingSection = () => {
         </div>
 
         {/* Early Bird Banner */}
-        <div className="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl p-6 mb-12 text-center">
+        <div className="bg-gradient-to-r from-yellow-400 to-pink-500 rounded-2xl p-6 mb-12 text-center">
           <div className="flex items-center justify-center mb-2">
             <Gift className="w-6 h-6 text-white mr-2" />
             <span className="text-white font-bold text-lg">Early Bird Special - Save up to 25%!</span>
@@ -97,7 +97,7 @@ const TicketingSection = () => {
                     <span>Availability</span>
                     <span className={`font-semibold ${
                       tier.availability === 'Extremely Limited' ? 'text-red-600' :
-                      tier.availability === 'Very Limited' ? 'text-orange-600' :
+                      tier.availability === 'Very Limited' ? 'text-pink-600' :
                       'text-green-600'
                     }`}>{tier.availability}</span>
                   </div>

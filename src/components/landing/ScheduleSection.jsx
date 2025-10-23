@@ -32,7 +32,7 @@ const ScheduleSection = () => {
     switch(game) {
       case 'Valorant': return 'from-purple-500 to-pink-500';
       case 'Rocket League': return 'from-blue-500 to-cyan-500';
-      case 'Super Smash Bros': return 'from-red-500 to-orange-500';
+      case 'Super Smash Bros': return 'from-red-500 to-pink-500';
       default: return 'from-gray-500 to-gray-600';
     }
   };
@@ -43,7 +43,7 @@ const ScheduleSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Event <span className="bg-gradient-to-r from-purple-600 via-pink-600 via-orange-400 to-blue-600 bg-clip-text text-transparent">Schedule</span>
+            Event <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Schedule</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Follow all the action across 5 days of intense competition. Don't miss a single match!
@@ -58,7 +58,7 @@ const ScheduleSection = () => {
               onClick={() => setSelectedDay(day)}
               className={`px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all duration-300 text-sm sm:text-base ${
                 selectedDay === day
-                  ? 'bg-gradient-to-r from-purple-600 via-pink-600 via-orange-400 to-blue-600 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white shadow-lg'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
@@ -75,7 +75,7 @@ const ScheduleSection = () => {
               onClick={() => setFilterGame(game)}
               className={`px-3 sm:px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm sm:text-base ${
                 filterGame === game
-                  ? 'bg-gradient-to-r from-purple-600 via-pink-600 via-orange-400 to-blue-600 text-white'
+                  ? 'bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >

@@ -11,13 +11,13 @@ const AboutSection = () => {
       icon: Trophy,
       value: '$1M+',
       label: 'Prize Pool',
-      color: 'from-yellow-500 to-orange-500'
+      color: 'from-yellow-500 to-pink-500'
     },
     {
       icon: Users,
       value: totalTeams.toString(),
       label: 'Competing Teams',
-      color: 'from-orange-400 to-orange-600'
+      color: 'from-pink-500 to-pink-600'
     },
     {
       icon: Calendar,
@@ -29,7 +29,7 @@ const AboutSection = () => {
       icon: MapPin,
       value: '3',
       label: 'Featured Games',
-      color: 'from-orange-400 to-orange-600'
+      color: 'from-pink-500 to-pink-600'
     }
   ];
 

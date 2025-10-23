@@ -33,10 +33,10 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
               onClick={() => scrollToSection('hero')}
               className="flex-shrink-0 flex items-center group cursor-pointer"
             >
-                <div className="w-8 h-8 bg-gradient-to-r from-purple-600 via-pink-600 via-orange-400 to-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 hover-glow">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 hover-glow">
                   <Gamepad2 className="w-5 h-5 text-white transition-transform duration-300 group-hover:scale-110" />
                 </div>
-                <span className="ml-2 text-xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 via-orange-200 to-blue-400 bg-clip-text text-transparent transition-all duration-300 group-hover:scale-105">
+                <span className="ml-2 text-xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent transition-all duration-300 group-hover:scale-105">
                   NSCS
                 </span>
             </button>
@@ -51,7 +51,7 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                   className="px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 transform hover:scale-105 relative overflow-hidden group text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
                   <span className="relative z-10">{item.name}</span>
-                  <span className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 via-orange-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 </button>
               ))}
             </div>
@@ -68,7 +68,7 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
             </button>
                 <button
                   onClick={() => scrollToSection('ticketing')}
-                  className="px-4 py-2 bg-gradient-to-r from-purple-600 via-pink-600 via-orange-400 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:via-pink-700 hover:via-orange-500 hover:to-blue-700 transition-all duration-300 flex items-center"
+                  className="px-4 py-2 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 transition-all duration-300 flex items-center"
                 >
                   <Ticket className="w-4 h-4 mr-2" />
                   Tickets
@@ -106,7 +106,7 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                 <div className="pt-4 border-t border-gray-700">
                   <button
                     onClick={() => scrollToSection('ticketing')}
-                    className="w-full px-4 py-3 bg-gradient-to-r from-purple-600 via-pink-600 via-orange-400 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:via-pink-700 hover:via-orange-500 hover:to-blue-700 transition-all duration-300 flex items-center justify-center mb-2"
+                    className="w-full px-4 py-3 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 transition-all duration-300 flex items-center justify-center mb-2"
                   >
                     <Ticket className="w-4 h-4 mr-2" />
                     Buy Tickets

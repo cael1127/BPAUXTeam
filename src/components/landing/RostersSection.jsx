@@ -105,13 +105,13 @@ const RostersSection = () => {
                 {/* Players */}
                 <div className="mb-4">
                   <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-                    <Users className="w-4 h-4 mr-2 text-orange-500" />
+                    <Users className="w-4 h-4 mr-2 text-pink-500" />
                     Players
                   </h4>
                   <div className="space-y-1">
                     {team.players.map((player, playerIndex) => (
                       <div key={playerIndex} className="text-sm text-gray-600 flex items-center">
-                        <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></div>
+                        <div className="w-1.5 h-1.5 bg-pink-500 rounded-full mr-2"></div>
                         {player}
                       </div>
                     ))}
@@ -152,7 +152,7 @@ const RostersSection = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { name: 'Team Phoenix', game: 'Valorant', achievement: '2025 VCT Masters Winner', color: 'from-red-500 to-orange-500' },
+              { name: 'Team Phoenix', game: 'Valorant', achievement: '2025 VCT Masters Winner', color: 'from-red-500 to-pink-500' },
               { name: 'Aerial Assassins', game: 'Rocket League', achievement: '2025 RLCS World Champion', color: 'from-blue-500 to-sky-500' },
               { name: 'Elite Warriors', game: 'Super Smash Bros', achievement: '2025 Smash Ultimate Major Winner', color: 'from-red-500 to-pink-500' }
             ].map((team, index) => (

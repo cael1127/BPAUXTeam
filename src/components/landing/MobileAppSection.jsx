@@ -11,7 +11,7 @@ const MobileAppSection = () => {
       icon: Trophy,
       description: 'Real-time match updates and live scoring',
       features: ['Live match tracking', 'Score notifications', 'Match history', 'Team standings'],
-      color: 'from-red-500 to-orange-500'
+      color: 'from-red-500 to-pink-500'
     },
     {
       id: 'stats',

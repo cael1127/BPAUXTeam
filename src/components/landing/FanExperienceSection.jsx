@@ -51,7 +51,7 @@ const FanExperienceSection = () => {
       icon: Crown,
       title: 'VIP Meet & Greets',
       description: 'Exclusive access to meet your favorite players and get autographs',
-      color: 'from-yellow-500 to-orange-500'
+      color: 'from-yellow-500 to-pink-500'
     },
     {
       icon: Gift,
