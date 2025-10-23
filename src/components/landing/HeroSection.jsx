@@ -37,26 +37,29 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900 via-gray-800 to-blue-900">
+    <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900 via-purple-700 to-blue-900">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-purple-700 rounded-full mix-blend-multiply filter blur-xl opacity-12"></div>
-          <div className="absolute top-40 right-10 w-48 h-48 bg-blue-700 rounded-full mix-blend-multiply filter blur-xl opacity-10"></div>
-          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-indigo-700 rounded-full mix-blend-multiply filter blur-xl opacity-12"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-10"></div>
+          <div className="absolute top-40 right-10 w-48 h-48 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-8"></div>
+          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-indigo-600 rounded-full mix-blend-multiply filter blur-xl opacity-10"></div>
           
-          {/* Additional dark color hotspots */}
-          <div className="absolute top-1/4 right-1/5 w-56 h-56 bg-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-8"></div>
-          <div className="absolute bottom-1/3 left-1/5 w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-10"></div>
-          <div className="absolute top-2/3 right-1/3 w-48 h-48 bg-indigo-600 rounded-full mix-blend-multiply filter blur-xl opacity-8"></div>
+          {/* Balanced color hotspots */}
+          <div className="absolute top-1/4 right-1/5 w-56 h-56 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-6"></div>
+          <div className="absolute bottom-1/3 left-1/5 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-8"></div>
+          <div className="absolute top-2/3 right-1/3 w-48 h-48 bg-rose-400 rounded-full mix-blend-multiply filter blur-xl opacity-6"></div>
           
-          {/* Small diagonal peach blend area */}
-          <div className="absolute top-1/3 left-1/4 w-96 h-48 bg-gradient-to-br from-transparent via-rose-200/20 to-transparent mix-blend-multiply filter blur-2xl opacity-30 transform rotate-12"></div>
+          {/* Moderate diagonal peach blend area */}
+          <div className="absolute top-1/3 left-1/4 w-80 h-40 bg-gradient-to-br from-transparent via-rose-300/30 to-transparent mix-blend-multiply filter blur-2xl opacity-40 transform rotate-12"></div>
           
-          {/* Minimal peach accent */}
-          <div className="absolute bottom-1/4 right-1/3 w-40 h-40 bg-rose-300 rounded-full mix-blend-multiply filter blur-2xl opacity-4"></div>
+          {/* Balanced peach accent */}
+          <div className="absolute bottom-1/4 right-1/3 w-48 h-48 bg-rose-400 rounded-full mix-blend-multiply filter blur-2xl opacity-6"></div>
           
-          {/* Subtle freeform peachy hotspot */}
-          <div className="absolute top-1/3 right-1/4 w-32 h-32 mix-blend-multiply filter blur-2xl opacity-1">
+          {/* Additional peach hotspot for balance */}
+          <div className="absolute top-1/2 right-1/6 w-40 h-40 bg-rose-300 rounded-full mix-blend-multiply filter blur-2xl opacity-5"></div>
+          
+          {/* Moderate freeform peachy hotspot */}
+          <div className="absolute top-1/3 right-1/4 w-32 h-32 mix-blend-multiply filter blur-2xl opacity-3">
             <svg viewBox="0 0 192 192" className="w-full h-full">
               <path d="M96 16C120 32 140 48 160 72C180 96 176 120 160 136C144 152 120 160 96 160C72 160 48 152 32 136C16 120 12 96 32 72C52 48 72 32 96 16Z" fill="url(#peachyGradient)" />
               <defs>
