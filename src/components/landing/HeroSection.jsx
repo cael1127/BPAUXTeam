@@ -37,28 +37,29 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900 via-pink-600 to-blue-900">
+    <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900 via-rose-300 to-blue-900">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-          <div className="absolute top-40 right-10 w-48 h-48 bg-rose-300 rounded-full mix-blend-multiply filter blur-xl opacity-12 animate-pulse animation-delay-2000"></div>
-          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-8 animate-pulse"></div>
+          <div className="absolute top-40 right-10 w-48 h-48 bg-rose-300 rounded-full mix-blend-multiply filter blur-xl opacity-6 animate-pulse animation-delay-2000"></div>
+          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-8 animate-pulse animation-delay-4000"></div>
           
-          {/* Additional purple and pink hotspots */}
-          <div className="absolute top-1/4 right-1/5 w-56 h-56 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-15 animate-pulse animation-delay-1000"></div>
-          <div className="absolute bottom-1/3 left-1/5 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-18 animate-pulse animation-delay-3000"></div>
-          <div className="absolute top-2/3 right-1/3 w-48 h-48 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-16 animate-pulse animation-delay-1500"></div>
+          {/* Additional purple and peach hotspots */}
+          <div className="absolute top-1/4 right-1/5 w-56 h-56 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-6 animate-pulse animation-delay-1000"></div>
+          <div className="absolute bottom-1/3 left-1/5 w-64 h-64 bg-rose-400 rounded-full mix-blend-multiply filter blur-xl opacity-8 animate-pulse animation-delay-3000"></div>
+          <div className="absolute top-2/3 right-1/3 w-48 h-48 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-6 animate-pulse animation-delay-1500"></div>
           
-          {/* Small peach galaxy center */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-rose-300 rounded-full mix-blend-multiply filter blur-3xl opacity-8 animate-pulse animation-delay-3000"></div>
+          {/* Enhanced peach galaxy center */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-rose-300 rounded-full mix-blend-multiply filter blur-3xl opacity-6 animate-pulse animation-delay-3000"></div>
           
-          {/* Additional small peach elements */}
-          <div className="absolute top-1/4 left-1/3 w-32 h-32 bg-rose-200 rounded-full mix-blend-multiply filter blur-2xl opacity-6 animate-pulse animation-delay-1500"></div>
-          <div className="absolute bottom-1/4 right-1/3 w-40 h-40 bg-rose-300 rounded-full mix-blend-multiply filter blur-2xl opacity-4 animate-pulse animation-delay-2500"></div>
-          <div className="absolute top-3/4 left-1/4 w-32 h-32 bg-rose-200 rounded-full mix-blend-multiply filter blur-2xl opacity-5 animate-pulse animation-delay-3500"></div>
+          {/* Additional gentle peach elements */}
+          <div className="absolute top-1/4 left-1/3 w-32 h-32 bg-rose-200 rounded-full mix-blend-multiply filter blur-2xl opacity-3 animate-pulse animation-delay-1500"></div>
+          <div className="absolute bottom-1/4 right-1/3 w-40 h-40 bg-rose-300 rounded-full mix-blend-multiply filter blur-2xl opacity-3 animate-pulse animation-delay-2500"></div>
+          <div className="absolute top-3/4 left-1/4 w-32 h-32 bg-rose-200 rounded-full mix-blend-multiply filter blur-2xl opacity-3 animate-pulse animation-delay-3500"></div>
+          <div className="absolute bottom-1/5 left-1/2 w-48 h-48 bg-rose-400 rounded-full mix-blend-multiply filter blur-2xl opacity-4 animate-pulse animation-delay-2000"></div>
           
-          {/* Small soft freeform peachy hotspot */}
-          <div className="absolute top-1/3 right-1/4 w-32 h-32 mix-blend-multiply filter blur-2xl opacity-5 animate-pulse animation-delay-1000">
+          {/* Very gentle freeform peachy hotspot */}
+          <div className="absolute top-1/3 right-1/4 w-32 h-32 mix-blend-multiply filter blur-2xl opacity-2 animate-pulse animation-delay-1000">
             <svg viewBox="0 0 192 192" className="w-full h-full">
               <path d="M96 16C120 32 140 48 160 72C180 96 176 120 160 136C144 152 120 160 96 160C72 160 48 152 32 136C16 120 12 96 32 72C52 48 72 32 96 16Z" fill="url(#peachyGradient)" />
               <defs>
