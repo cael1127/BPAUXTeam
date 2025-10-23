@@ -9,7 +9,7 @@ const GamesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Featured <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Games</span>
+            Featured <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">Games</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Three of the most competitive esports titles will be showcased, featuring the world's best teams competing for championship glory.

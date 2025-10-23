@@ -72,7 +72,7 @@ const HeroSection = () => {
 
         {/* Main Title */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in stagger-1">
-          <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-purple-400 via-pink-400 via-orange-300 to-blue-400 bg-clip-text text-transparent">
             NSCS 2026
           </span>
         </h1>
@@ -93,7 +93,7 @@ const HeroSection = () => {
             <span className="text-base sm:text-lg font-semibold">Nashville, TN</span>
           </div>
           <div className="flex items-center text-white">
-            <Users className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-blue-400" />
+            <Users className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-orange-300" />
             <span className="text-base sm:text-lg font-semibold">52 Teams</span>
           </div>
         </div>

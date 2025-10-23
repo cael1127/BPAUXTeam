@@ -38,14 +38,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center mr-3">
-                <Gamepad2 className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                NSCS 2026
-              </span>
-            </div>
+                <div className="flex items-center mb-6">
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                    <Gamepad2 className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-orange-300 bg-clip-text text-transparent">
+                    NSCS 2026
+                  </span>
+                </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               The ultimate esports championship featuring the world's best teams in Valorant, Rocket League, and Super Smash Bros Ultimate.
             </p>
@@ -133,9 +133,9 @@ const Footer = () => {
                   placeholder="Your email"
                   className="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-l-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
                 />
-                <button className="px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-r-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
-                  Subscribe
-                </button>
+                  <button className="px-4 py-2 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white rounded-r-lg hover:from-purple-700 hover:via-pink-700 hover:to-orange-600 transition-all duration-300">
+                    Subscribe
+                  </button>
               </div>
             </div>
           </div>

@@ -105,13 +105,13 @@ const RostersSection = () => {
                 {/* Players */}
                 <div className="mb-4">
                   <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-                    <Users className="w-4 h-4 mr-2 text-purple-500" />
+                    <Users className="w-4 h-4 mr-2 text-orange-500" />
                     Players
                   </h4>
                   <div className="space-y-1">
                     {team.players.map((player, playerIndex) => (
                       <div key={playerIndex} className="text-sm text-gray-600 flex items-center">
-                        <div className="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></div>
+                        <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></div>
                         {player}
                       </div>
                     ))}
