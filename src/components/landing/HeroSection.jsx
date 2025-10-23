@@ -44,23 +44,23 @@ const HeroSection = () => {
           <div className="absolute top-40 right-10 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
           <div className="absolute -bottom-8 left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
           
-          {/* Orange galaxy center */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-orange-400 rounded-full mix-blend-multiply filter blur-2xl opacity-15 animate-pulse animation-delay-3000"></div>
+          {/* Light peach galaxy center */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-orange-200 rounded-full mix-blend-multiply filter blur-3xl opacity-8 animate-pulse animation-delay-3000"></div>
           
-          {/* Additional orange elements */}
-          <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-18 animate-pulse animation-delay-1500"></div>
-          <div className="absolute bottom-1/4 right-1/3 w-56 h-56 bg-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-12 animate-pulse animation-delay-2500"></div>
-          <div className="absolute top-3/4 left-1/4 w-48 h-48 bg-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-16 animate-pulse animation-delay-3500"></div>
+          {/* Additional light peach elements */}
+          <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-orange-100 rounded-full mix-blend-multiply filter blur-2xl opacity-10 animate-pulse animation-delay-1500"></div>
+          <div className="absolute bottom-1/4 right-1/3 w-56 h-56 bg-orange-200 rounded-full mix-blend-multiply filter blur-2xl opacity-6 animate-pulse animation-delay-2500"></div>
+          <div className="absolute top-3/4 left-1/4 w-48 h-48 bg-orange-100 rounded-full mix-blend-multiply filter blur-2xl opacity-8 animate-pulse animation-delay-3500"></div>
           
-          {/* Freeform peachy hotspot */}
-          <div className="absolute top-1/3 right-1/4 w-48 h-48 mix-blend-multiply filter blur-xl opacity-25 animate-pulse animation-delay-1000">
+          {/* Soft freeform peachy hotspot */}
+          <div className="absolute top-1/3 right-1/4 w-48 h-48 mix-blend-multiply filter blur-2xl opacity-12 animate-pulse animation-delay-1000">
             <svg viewBox="0 0 192 192" className="w-full h-full">
               <path d="M96 16C120 32 140 48 160 72C180 96 176 120 160 136C144 152 120 160 96 160C72 160 48 152 32 136C16 120 12 96 32 72C52 48 72 32 96 16Z" fill="url(#peachyGradient)" />
               <defs>
                 <linearGradient id="peachyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stopColor="#fed7aa" />
-                  <stop offset="50%" stopColor="#fb923c" />
-                  <stop offset="100%" stopColor="#f97316" />
+                  <stop offset="50%" stopColor="#fbbf24" />
+                  <stop offset="100%" stopColor="#f59e0b" />
                 </linearGradient>
               </defs>
             </svg>
@@ -73,8 +73,8 @@ const HeroSection = () => {
           <div
             key={i}
             className={`absolute w-1 h-1 rounded-full opacity-30 animate-ping ${
-              i % 7 === 0 ? 'bg-orange-300' : 
-              i % 11 === 0 ? 'bg-pink-300' : 
+              i % 7 === 0 ? 'bg-orange-200' : 
+              i % 11 === 0 ? 'bg-pink-200' : 
               'bg-white'
             }`}
             style={{
