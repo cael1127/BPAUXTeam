@@ -72,7 +72,7 @@ const HeroSection = () => {
 
         {/* Main Title */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in stagger-1">
-          <span className="bg-gradient-to-r from-purple-400 via-pink-400 via-orange-300 to-blue-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-purple-400 via-pink-400 via-orange-200 to-blue-400 bg-clip-text text-transparent">
             NSCS 2026
           </span>
         </h1>

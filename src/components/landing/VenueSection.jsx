@@ -20,7 +20,7 @@ const VenueSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">Nashville</span> Venue
+            <span className="bg-gradient-to-r from-purple-600 via-pink-600 via-orange-400 to-blue-600 bg-clip-text text-transparent">Nashville</span> Venue
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Experience the championship at the world-class Music City Center in the heart of Nashville.

@@ -9,7 +9,7 @@ const GamesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Featured <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">Games</span>
+            Featured <span className="bg-gradient-to-r from-purple-600 via-pink-600 via-orange-400 to-blue-600 bg-clip-text text-transparent">Games</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Three of the most competitive esports titles will be showcased, featuring the world's best teams competing for championship glory.
@@ -58,7 +58,10 @@ const GamesSection = () => {
                     <div className="grid grid-cols-1 gap-2">
                       {game.features.slice(0, 3).map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center text-sm text-gray-600">
-                          <div className="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></div>
+                          <div className={`w-1.5 h-1.5 rounded-full mr-2 ${
+                            featureIndex === 0 ? 'bg-purple-500' : 
+                            featureIndex === 1 ? 'bg-orange-400' : 'bg-pink-500'
+                          }`}></div>
                           {feature}
                         </div>
                       ))}

@@ -17,7 +17,7 @@ const AboutSection = () => {
       icon: Users,
       value: totalTeams.toString(),
       label: 'Competing Teams',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-orange-400 to-orange-600'
     },
     {
       icon: Calendar,
@@ -29,7 +29,7 @@ const AboutSection = () => {
       icon: MapPin,
       value: '3',
       label: 'Featured Games',
-      color: 'from-green-500 to-emerald-500'
+      color: 'from-orange-400 to-orange-600'
     }
   ];
 
