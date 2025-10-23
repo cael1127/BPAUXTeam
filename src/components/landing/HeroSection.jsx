@@ -49,8 +49,8 @@ const HeroSection = () => {
           <div className="absolute bottom-1/3 left-1/5 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-8"></div>
           <div className="absolute top-2/3 right-1/3 w-48 h-48 bg-rose-400 rounded-full mix-blend-multiply filter blur-xl opacity-6"></div>
           
-          {/* Moderate diagonal peach blend area */}
-          <div className="absolute top-1/3 left-1/4 w-80 h-40 bg-gradient-to-br from-transparent via-rose-300/30 to-transparent mix-blend-multiply filter blur-2xl opacity-40 transform rotate-12"></div>
+          {/* Enhanced diagonal peach blend area */}
+          <div className="absolute top-1/3 left-1/4 w-80 h-40 bg-gradient-to-br from-transparent via-rose-300/40 to-transparent mix-blend-multiply filter blur-2xl opacity-50 transform rotate-12"></div>
           
           {/* Balanced peach accent */}
           <div className="absolute bottom-1/4 right-1/3 w-48 h-48 bg-rose-400 rounded-full mix-blend-multiply filter blur-2xl opacity-6"></div>
