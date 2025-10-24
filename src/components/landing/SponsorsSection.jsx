@@ -27,8 +27,19 @@ const SponsorsSection = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {sponsors.tiers.sponsors.map((sponsor, index) => (
               <div key={index} className="group bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-                <div className={`w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-r ${sponsor.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <span className="text-3xl">{sponsor.logo}</span>
+                <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-gray-200">
+                  <img 
+                    src={sponsor.logo} 
+                    alt={sponsor.logoAlt}
+                    className="w-16 h-16 object-contain"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'block';
+                    }}
+                  />
+                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${sponsor.color} flex items-center justify-center text-white text-2xl font-bold hidden`}>
+                    {sponsor.name.charAt(0)}
+                  </div>
                 </div>
                 <h4 className="text-2xl font-bold text-gray-900 mb-2">{sponsor.name}</h4>
                 <p className="text-purple-600 font-semibold mb-4">{sponsor.description}</p>
@@ -56,8 +67,19 @@ const SponsorsSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {sponsors.gold.sponsors.map((sponsor, index) => (
               <div key={index} className="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-r ${sponsor.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <span className="text-2xl">{sponsor.logo}</span>
+                <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-gray-200">
+                  <img 
+                    src={sponsor.logo} 
+                    alt={sponsor.logoAlt}
+                    className="w-12 h-12 object-contain"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'block';
+                    }}
+                  />
+                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${sponsor.color} flex items-center justify-center text-white text-lg font-bold hidden`}>
+                    {sponsor.name.charAt(0)}
+                  </div>
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-1">{sponsor.name}</h4>
                 <p className="text-gray-600 text-sm mb-3">{sponsor.description}</p>
@@ -83,8 +105,19 @@ const SponsorsSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {sponsors.silver.sponsors.map((sponsor, index) => (
               <div key={index} className="group bg-white rounded-lg shadow-sm p-4 text-center hover:shadow-md transform hover:scale-105 transition-all duration-300">
-                <div className={`w-12 h-12 mx-auto mb-3 rounded-lg bg-gradient-to-r ${sponsor.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <span className="text-xl">{sponsor.logo}</span>
+                <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-gray-200">
+                  <img 
+                    src={sponsor.logo} 
+                    alt={sponsor.logoAlt}
+                    className="w-10 h-10 object-contain"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'block';
+                    }}
+                  />
+                  <div className={`w-10 h-10 rounded-lg bg-gradient-to-r ${sponsor.color} flex items-center justify-center text-white text-sm font-bold hidden`}>
+                    {sponsor.name.charAt(0)}
+                  </div>
                 </div>
                 <h4 className="text-sm font-bold text-gray-900 mb-1">{sponsor.name}</h4>
                 <p className="text-gray-600 text-xs">{sponsor.category}</p>
@@ -102,8 +135,19 @@ const SponsorsSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {sponsors.media.sponsors.map((sponsor, index) => (
               <div key={index} className="group bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-r ${sponsor.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <span className="text-2xl">{sponsor.logo}</span>
+                <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-white flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-gray-200">
+                  <img 
+                    src={sponsor.logo} 
+                    alt={sponsor.logoAlt}
+                    className="w-12 h-12 object-contain"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'block';
+                    }}
+                  />
+                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${sponsor.color} flex items-center justify-center text-white text-lg font-bold hidden`}>
+                    {sponsor.name.charAt(0)}
+                  </div>
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-1">{sponsor.name}</h4>
                 <p className="text-gray-600 text-sm mb-3">{sponsor.description}</p>

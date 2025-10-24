@@ -103,6 +103,22 @@ This project uses NO stock photography, stock images, or third-party graphics. A
 
 **Note**: NO game logos, characters, screenshots, or proprietary assets are included. Only game titles are referenced as part of the tournament concept.
 
+### Partner Logos (Fair Use - Educational)
+**Partner Logos Used**:
+- NVIDIA, Intel, ASUS ROG, Razer, Corsair, HyperX, SteelSeries
+- Red Bull, Monster Energy, Twitch, YouTube Gaming, Discord, Spotify
+- ESPN, IGN, GameSpot, Polygon
+
+**Fair Use Justification**:
+- **Purpose**: Educational project for BPA competition (non-commercial)
+- **Nature**: Logo representations for partnership demonstration only
+- **Amount**: Minimal use (simple SVG representations, not actual logos)
+- **Effect**: No market impact (educational context, not competing product)
+
+**Legal Basis**: 17 U.S.C. § 107 - Fair use for educational purposes.
+
+**Note**: All logos are simple SVG representations created for demonstration purposes. Proper attribution and copyright notices are included for all partner companies. See `/public/logos/COPYRIGHT_NOTICE.md` for detailed attributions.
+
 ---
 
 ## Third-Party Services (Reference Only)
