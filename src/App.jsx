@@ -26,7 +26,8 @@ const App = () => {
       />
       
       {/* Landing Page Sections */}
-      <HeroSection />
+      <div className="pt-16">
+        <HeroSection />
       <AboutSection />
       <GamesSection />
       <RostersSection />
@@ -37,6 +38,7 @@ const App = () => {
       <SponsorsSection />
       <MobileAppSection />
       <NewsletterSection />
+      </div>
 
       <Footer />
     </div>

@@ -35,7 +35,7 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
       </a>
       
       <nav 
-        className="w-full bg-gray-900 text-white sticky top-0 z-50 shadow-lg backdrop-blur-sm bg-opacity-95 transition-all duration-300"
+        className="w-full bg-gray-900 text-white fixed top-0 left-0 right-0 z-50 shadow-lg backdrop-blur-sm bg-opacity-95 transition-all duration-300"
         role="navigation"
         aria-label="Main navigation"
       >
