@@ -11,7 +11,7 @@ const SponsorsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Partners</span>
+            Our <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">Partners</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Proudly supported by industry leaders in gaming, technology, and entertainment.

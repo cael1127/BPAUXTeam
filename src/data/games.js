@@ -32,7 +32,7 @@ export const games = [
   {
     name: 'Rocket League',
     icon: '🚗',
-    color: 'from-blue-500 via-cyan-500 to-teal-500',
+    color: 'from-blue-600 via-cyan-600 to-teal-600',
     description: 'High-octane vehicular soccer with physics-defying aerial maneuvers',
     prizePool: '$300,000',
     teams: 12,

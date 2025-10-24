@@ -58,7 +58,7 @@ const NewsletterSection = () => {
     { icon: Users, label: 'Discord Members', value: '12,547', color: 'from-blue-500 via-purple-500 to-pink-500' },
     { icon: Mail, label: 'Newsletter Subscribers', value: '8,923', color: 'from-purple-500 via-pink-500 to-blue-500' },
     { icon: MessageCircle, label: 'Social Followers', value: '45,678', color: 'from-pink-500 via-purple-500 to-blue-500' },
-    { icon: Bell, label: 'Push Notifications', value: '23,456', color: 'from-cyan-500 via-blue-500 to-purple-500' }
+    { icon: Bell, label: 'Push Notifications', value: '23,456', color: 'from-cyan-600 via-blue-600 to-purple-600' }
   ];
 
   // Scroll animation hooks

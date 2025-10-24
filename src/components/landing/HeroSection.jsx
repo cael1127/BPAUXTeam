@@ -95,7 +95,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Event Logo/Badge */}
-        <div className="mb-8 animate-fade-in">
+        <div className="mb-12 animate-fade-in">
           <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
             <Trophy className="w-6 h-6 text-yellow-400 mr-2" />
             <span className="text-white font-semibold">National Esports Championship Series</span>
@@ -180,7 +180,7 @@ const HeroSection = () => {
         </div>
 
         {/* Prize Pool Display */}
-        <div className="mt-16 animate-fade-in stagger-6">
+        <div className="mt-8 mb-8 animate-fade-in stagger-6">
           <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500/20 to-pink-500/20 backdrop-blur-sm rounded-2xl border border-yellow-400/30">
             <Trophy className="w-8 h-8 text-yellow-400 mr-3" />
             <div className="text-left">

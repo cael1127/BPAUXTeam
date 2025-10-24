@@ -4,6 +4,8 @@ import { useScrollAnimation, useStaggeredAnimation } from '../../hooks/useScroll
 
 const MobileAppSection = () => {
   const [activeScreen, setActiveScreen] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
 
   const screens = [
     {
@@ -66,6 +68,32 @@ const MobileAppSection = () => {
     }
   ];
 
+  // Touch gesture handling
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    
+    if (isLeftSwipe && activeScreen < screens.length - 1) {
+      setActiveScreen(activeScreen + 1);
+    }
+    if (isRightSwipe && activeScreen > 0) {
+      setActiveScreen(activeScreen - 1);
+    }
+  };
+
   // Scroll animation hooks
   const [sectionRef, isSectionVisible] = useScrollAnimation();
   const [featuresRefs, visibleFeatures] = useStaggeredAnimation(appFeatures, 100);
@@ -86,11 +114,32 @@ const MobileAppSection = () => {
           </p>
         </div>
 
+        {/* Coming Soon Notice */}
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-lg">
+          <div className="flex items-center">
+            <div className="flex-shrink-0">
+              <svg className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <div className="ml-3">
+              <p className="text-sm text-yellow-700">
+                <span className="font-semibold">Coming Soon:</span> The mobile app is currently in development and will be available before the championship begins.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* App Preview */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Phone Mockup */}
           <div className="relative">
-            <div className="relative mx-auto w-80 h-[600px] bg-gray-800 rounded-[3rem] p-2 shadow-2xl">
+            <div 
+              className="relative mx-auto w-80 h-[600px] bg-gray-800 rounded-[3rem] p-2 shadow-2xl"
+              onTouchStart={onTouchStart}
+              onTouchMove={onTouchMove}
+              onTouchEnd={onTouchEnd}
+            >
               <div className="w-full h-full bg-black rounded-[2.5rem] overflow-hidden relative">
                 {/* Status Bar */}
                 <div className="flex justify-between items-center px-6 py-2 text-white text-sm">
@@ -161,6 +210,19 @@ const MobileAppSection = () => {
                   }`}
                 />
               ))}
+            </div>
+            
+            {/* Swipe Indicator */}
+            <div className="text-center mt-4 text-gray-400 text-sm">
+              <span className="inline-flex items-center">
+                <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                </svg>
+                Swipe to navigate
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
             </div>
           </div>
 

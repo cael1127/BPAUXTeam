@@ -31,7 +31,7 @@ const ScheduleSection = () => {
   const getGameColor = (game) => {
     switch(game) {
       case 'Valorant': return 'from-red-500 via-orange-500 to-yellow-500';
-      case 'Rocket League': return 'from-blue-500 via-cyan-500 to-teal-500';
+      case 'Rocket League': return 'from-blue-600 via-cyan-600 to-teal-600';
       case 'Super Smash Bros': return 'from-purple-500 via-pink-500 to-rose-500';
       default: return 'from-gray-500 to-gray-600';
     }
@@ -43,7 +43,7 @@ const ScheduleSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Event <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Schedule</span>
+            Event <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">Schedule</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Follow all the action across 5 days of intense competition. Don't miss a single match!

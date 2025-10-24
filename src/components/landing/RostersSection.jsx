@@ -44,7 +44,7 @@ const RostersSection = () => {
           className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Competing <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Teams</span>
+            Competing <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">Teams</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Meet the world's best esports teams competing for championship glory across three major titles.
@@ -165,7 +165,7 @@ const RostersSection = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { name: 'Team Phoenix', game: 'Valorant', achievement: '2025 VCT Masters Winner', color: 'from-red-500 via-orange-500 to-yellow-500' },
-              { name: 'Aerial Assassins', game: 'Rocket League', achievement: '2025 RLCS World Champion', color: 'from-blue-500 via-cyan-500 to-teal-500' },
+              { name: 'Aerial Assassins', game: 'Rocket League', achievement: '2025 RLCS World Champion', color: 'from-blue-600 via-cyan-600 to-teal-600' },
               { name: 'Elite Warriors', game: 'Super Smash Bros', achievement: '2025 Smash Ultimate Major Winner', color: 'from-purple-500 via-pink-500 to-rose-500' }
             ].map((team, index) => (
               <div key={index} className="text-center group">

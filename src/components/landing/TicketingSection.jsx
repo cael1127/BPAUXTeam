@@ -34,7 +34,7 @@ const TicketingSection = () => {
   const [ticketsRefs, visibleTickets] = useStaggeredAnimation(ticketTiers, 100);
 
   return (
-    <section id="ticketing" className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+    <section id="ticketing" className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div 
@@ -42,7 +42,7 @@ const TicketingSection = () => {
           className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Get Your <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Tickets</span>
+            Get Your <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">Tickets</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choose your perfect championship experience with our flexible ticket options and exclusive perks.

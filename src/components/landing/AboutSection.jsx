@@ -66,7 +66,7 @@ const AboutSection = () => {
           className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            The Ultimate <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Esports Championship</span>
+            The Ultimate <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">Esports Championship</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join us in Nashville for the most prestigious esports event of 2026, featuring the world's top teams competing across three major titles for a share of over $1 million in prizes.
@@ -91,7 +91,7 @@ const AboutSection = () => {
         </div>
 
         {/* Mission Statement */}
-        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl p-8 md:p-12 mb-20">
+        <div className="bg-gradient-to-r from-purple-50 via-pink-50 to-orange-50 rounded-3xl p-8 md:p-12 mb-20">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
