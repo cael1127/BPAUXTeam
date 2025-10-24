@@ -25,7 +25,20 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   };
 
   return (
-    <nav className="w-full bg-gray-900 text-white sticky top-0 z-50 shadow-lg backdrop-blur-sm bg-opacity-95 transition-all duration-300">
+    <>
+      {/* Skip to content link for accessibility */}
+      <a 
+        href="#hero" 
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-purple-600 text-white px-4 py-2 rounded-lg z-50 focus:z-50"
+      >
+        Skip to main content
+      </a>
+      
+      <nav 
+        className="w-full bg-gray-900 text-white sticky top-0 z-50 shadow-lg backdrop-blur-sm bg-opacity-95 transition-all duration-300"
+        role="navigation"
+        aria-label="Main navigation"
+      >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -78,8 +91,10 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
           <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 transition-all duration-300 focus:outline-none transform hover:scale-110"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 transition-all duration-300 focus:outline-none transform hover:scale-110 min-h-[44px] min-w-[44px]"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               <div className="relative w-6 h-6">
                 <Menu className={`absolute inset-0 transition-all duration-300 ${mobileMenuOpen ? 'opacity-0 rotate-90 scale-0' : 'opacity-100 rotate-0 scale-100'}`} />
@@ -91,14 +106,21 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
       </div>
       
       {mobileMenuOpen && (
-        <div className="md:hidden animate-slide-in-left">
+        <div 
+          className="md:hidden animate-slide-in-left"
+          id="mobile-menu"
+          role="menu"
+          aria-label="Mobile navigation menu"
+        >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800 bg-opacity-95 backdrop-blur-sm">
             {navigationItems.map((item, index) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-all duration-300 transform hover:scale-105 hover:translate-x-2 animate-fade-in text-gray-300 hover:bg-gray-700 hover:text-white"
+                className="block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-all duration-300 transform hover:scale-105 hover:translate-x-2 animate-fade-in text-gray-300 hover:bg-gray-700 hover:text-white min-h-[44px]"
                 style={{ animationDelay: `${index * 0.05}s` }}
+                role="menuitem"
+                aria-label={`Navigate to ${item.name} section`}
               >
                 {item.name}
               </button>

@@ -1,14 +1,28 @@
 import React from 'react';
 import { Play, Trophy, Users, Clock, Zap, Target } from 'lucide-react';
 import { games } from '../../data/games';
+import { useScrollAnimation, useStaggeredAnimation } from '../../hooks/useScrollAnimation';
 
 const GamesSection = () => {
+  const [sectionRef, isSectionVisible] = useScrollAnimation();
+  const [gameRefs, visibleGames] = useStaggeredAnimation(games, 150);
+
   return (
-    <section id="games" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+    <section 
+      id="games" 
+      className="py-20 bg-gradient-to-br from-gray-50 to-purple-50"
+      aria-labelledby="games-heading"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div 
+          ref={sectionRef}
+          className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
+        >
+          <h2 
+            id="games-heading"
+            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+          >
             Featured <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Games</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -17,17 +31,28 @@ const GamesSection = () => {
         </div>
 
         {/* Games Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16" role="list" aria-label="Featured games list">
           {games.map((game, index) => (
-            <div key={index} className="group relative">
+            <div 
+              key={index} 
+              className={`group relative scroll-reveal-stagger ${visibleGames.has(index) ? 'revealed' : ''}`}
+              ref={el => gameRefs.current[index] = el}
+              role="listitem"
+              aria-label={`${game.name} game information`}
+            >
               <div className="bg-white rounded-3xl shadow-xl overflow-hidden transform group-hover:scale-105 transition-all duration-500 hover:shadow-2xl">
                 {/* Game Header */}
                 <div className={`h-40 sm:h-48 bg-gradient-to-br ${game.color} relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute top-4 sm:top-6 left-4 sm:left-6">
-                    <div className="text-4xl sm:text-6xl mb-2 sm:mb-4">{game.icon}</div>
+                    <div className="text-4xl sm:text-6xl mb-2 sm:mb-4" role="img" aria-label={`${game.name} game icon`}>{game.icon}</div>
                     <h3 className="text-xl sm:text-2xl font-bold text-white">{game.name}</h3>
                     <p className="text-white/90 text-xs sm:text-sm">{game.genre}</p>
+                    {/* Icon indicator for colorblind accessibility */}
+                    <div className="mt-2">
+                      <span className="inline-block w-3 h-3 rounded-full border-2 border-white mr-2" aria-hidden="true"></span>
+                      <span className="text-white/90 text-xs font-medium">{game.name}</span>
+                    </div>
                   </div>
                   <div className="absolute top-6 right-6">
                     <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
@@ -85,8 +110,11 @@ const GamesSection = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 flex items-center justify-center group">
-                    <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                  <button 
+                    className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 flex items-center justify-center group btn-accessible"
+                    aria-label={`Watch ${game.name} matches and highlights`}
+                  >
+                    <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" aria-hidden="true" />
                     Watch Matches
                   </button>
                 </div>
