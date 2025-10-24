@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-4.5-purple)](https://vitejs.dev/)
+[![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7)](https://nscs2026.netlify.app)
 
 ## 🚀 Quick Start
 
@@ -23,7 +24,7 @@ npm run dev
 npm run build
 ```
 
-**Access the application**: `http://localhost:3000`
+**Access the application**: `http://localhost:5173` (Vite default port)
 
 ## 📋 Table of Contents
 
@@ -106,14 +107,16 @@ src/
 ## 📚 Documentation
 
 ### 📋 Business & Technical Docs
-- **[Business Proposal](BUSINESS_PROPOSAL.md)** - Executive business case and ROI analysis
-- **[Technical Documentation](TECHNICAL_DOCUMENTATION.md)** - Architecture and implementation guide
-- **[Responsive Design Summary](RESPONSIVE_DESIGN_SUMMARY.md)** - Mobile optimization details
+- **[Business Proposal](docs/BUSINESS_PROPOSAL.md)** - Executive business case and ROI analysis
+- **[Technical Documentation](docs/TECHNICAL_DOCUMENTATION.md)** - Architecture and implementation guide
+- **[Responsive Design Summary](docs/RESPONSIVE_DESIGN_SUMMARY.md)** - Mobile optimization details
+- **[Project Overview](docs/PROJECT_OVERVIEW.md)** - Complete project overview and organization
 
 ### 🎯 Competition Resources
 - **[Competition Guides](competition-guides/)** - BPA preparation materials
 - **[Team Resources](team-resources/)** - Team coordination and presentation guides
 - **[Deployment Docs](deployment-docs/)** - Production deployment instructions
+- **[Documentation Index](docs/README.md)** - All documentation organized by category
 
 ## 🛠️ Development
 
