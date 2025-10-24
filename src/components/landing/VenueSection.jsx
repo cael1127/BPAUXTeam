@@ -184,7 +184,7 @@ const VenueSection = () => {
         {activeTab === 'accessibility' && (
           <div className="space-y-8">
             <div className="text-center mb-8">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
+               <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 flex items-center justify-center">
                 <Accessibility className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">Accessibility Features</h3>
