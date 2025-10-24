@@ -136,7 +136,7 @@ const TicketingSection = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {groupDiscounts.map((discount, index) => (
               <div key={index} className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">{discount.minPeople}+ People</h4>

@@ -155,31 +155,31 @@ const ScheduleSection = () => {
             <p className="text-lg text-gray-600">Follow the tournament progression in real-time</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
-                <Trophy className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-2">Group Stage</h4>
-              <p className="text-gray-600">May 6-8: Teams compete in round-robin format</p>
-            </div>
+           <div className="grid md:grid-cols-3 gap-8">
+             <div className="text-center">
+               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 flex items-center justify-center">
+                 <Trophy className="w-8 h-8 text-white" />
+               </div>
+               <h4 className="text-xl font-bold text-gray-900 mb-2">Group Stage</h4>
+               <p className="text-gray-600">May 6-8: Teams compete in round-robin format</p>
+             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-pink-500 to-blue-500 flex items-center justify-center">
-                <Play className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-2">Playoffs</h4>
-              <p className="text-gray-600">May 9: Single elimination bracket begins</p>
-            </div>
+             <div className="text-center">
+               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 flex items-center justify-center">
+                 <Play className="w-8 h-8 text-white" />
+               </div>
+               <h4 className="text-xl font-bold text-gray-900 mb-2">Playoffs</h4>
+               <p className="text-gray-600">May 9: Single elimination bracket begins</p>
+             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
-                <Trophy className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-2">Finals</h4>
-              <p className="text-gray-600">May 10: Championship matches and crowning</p>
-            </div>
-          </div>
+             <div className="text-center">
+               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 flex items-center justify-center">
+                 <Trophy className="w-8 h-8 text-white" />
+               </div>
+               <h4 className="text-xl font-bold text-gray-900 mb-2">Finals</h4>
+               <p className="text-gray-600">May 10: Championship matches and crowning</p>
+             </div>
+           </div>
 
           <div className="text-center mt-8">
             <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
