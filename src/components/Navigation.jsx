@@ -125,14 +125,14 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                 {item.name}
               </button>
             ))}
-                <div className="pt-4 border-t border-gray-700">
-                  <button
-                    onClick={() => scrollToSection('ticketing')}
-                    className="w-full px-4 py-3 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 transition-all duration-300 flex items-center justify-center mb-2"
-                  >
-                    <Ticket className="w-4 h-4 mr-2" />
-                    Buy Tickets
-                  </button>
+            <div className="pt-4 border-t border-gray-700">
+              <button
+                onClick={() => scrollToSection('ticketing')}
+                className="w-full px-4 py-3 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 transition-all duration-300 flex items-center justify-center mb-2"
+              >
+                <Ticket className="w-4 h-4 mr-2" />
+                Buy Tickets
+              </button>
               <button
                 onClick={() => scrollToSection('livestreams')}
                 className="w-full px-4 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300 flex items-center justify-center"
@@ -145,6 +145,7 @@ const Navigation = ({ mobileMenuOpen, setMobileMenuOpen }) => {
         </div>
       )}
     </nav>
+    </>
   );
 };
 
