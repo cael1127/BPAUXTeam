@@ -12,9 +12,7 @@ import ScheduleSection from './components/landing/ScheduleSection';
 import TicketingSection from './components/landing/TicketingSection';
 import VenueSection from './components/landing/VenueSection';
 import SponsorsSection from './components/landing/SponsorsSection';
-import FanExperienceSection from './components/landing/FanExperienceSection';
 import MobileAppSection from './components/landing/MobileAppSection';
-import SocialMediaSection from './components/landing/SocialMediaSection';
 import NewsletterSection from './components/landing/NewsletterSection';
 
 const App = () => {
@@ -37,9 +35,7 @@ const App = () => {
       <TicketingSection />
       <VenueSection />
       <SponsorsSection />
-      <FanExperienceSection />
       <MobileAppSection />
-      <SocialMediaSection />
       <NewsletterSection />
 
       <Footer />
