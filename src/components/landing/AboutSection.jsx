@@ -151,26 +151,29 @@ const AboutSection = () => {
         </div>
 
         {/* Key Features */}
-        <div>
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Championship Features</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div 
-                key={index} 
-                className={`text-center group scroll-reveal-stagger ${visibleFeatures.has(index) ? 'revealed' : ''}`}
-                ref={el => featuresRefs.current[index] = el}
-              >
-                <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-r ${
-                  index === 0 ? 'from-purple-500 via-pink-500 to-blue-500' :
-                  index === 1 ? 'from-purple-500 via-pink-500 to-blue-500' :
-                  'from-purple-500 via-pink-500 to-blue-500'
-                } flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>
-                  <feature.icon className="w-8 h-8 text-white" />
+        <div className="relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 opacity-10"></div>
+          <div className="relative">
+            <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Championship Features</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
+                <div 
+                  key={index} 
+                  className={`text-center group scroll-reveal-stagger ${visibleFeatures.has(index) ? 'revealed' : ''}`}
+                  ref={el => featuresRefs.current[index] = el}
+                >
+                  <div className={`w-full h-24 mx-auto mb-6 rounded-2xl bg-gradient-to-r ${
+                    index === 0 ? 'from-purple-500 via-pink-500 to-blue-500' :
+                    index === 1 ? 'from-purple-500 via-pink-500 to-blue-500' :
+                    'from-purple-500 via-pink-500 to-blue-500'
+                  } flex items-center justify-center transform group-hover:scale-105 transition-all duration-300 shadow-lg`}>
+                    <feature.icon className="w-12 h-12 text-white" />
+                  </div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h4>
+                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h4>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -149,37 +149,41 @@ const ScheduleSection = () => {
         )}
 
         {/* Interactive Bracket Preview */}
-        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl p-8 mb-16">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Championship Bracket</h3>
-            <p className="text-lg text-gray-600">Follow the tournament progression in real-time</p>
+        <div className="relative overflow-hidden rounded-3xl mb-16">
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-10"></div>
+          <div className="relative bg-gradient-to-r from-purple-50 to-pink-50 p-8">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Championship Bracket</h3>
+              <p className="text-lg text-gray-600">Follow the tournament progression in real-time</p>
+            </div>
+
+             <div className="grid md:grid-cols-3 gap-8">
+               <div className="text-center">
+                 <div className="w-full h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center shadow-lg">
+                   <Trophy className="w-12 h-12 text-white" />
+                 </div>
+                 <h4 className="text-xl font-bold text-gray-900 mb-2">Group Stage</h4>
+                 <p className="text-gray-600">May 6-8: Teams compete in round-robin format</p>
+               </div>
+
+               <div className="text-center">
+                 <div className="w-full h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center shadow-lg">
+                   <Play className="w-12 h-12 text-white" />
+                 </div>
+                 <h4 className="text-xl font-bold text-gray-900 mb-2">Playoffs</h4>
+                 <p className="text-gray-600">May 9: Single elimination bracket begins</p>
+               </div>
+
+               <div className="text-center">
+                 <div className="w-full h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center shadow-lg">
+                   <Trophy className="w-12 h-12 text-white" />
+                 </div>
+                 <h4 className="text-xl font-bold text-gray-900 mb-2">Finals</h4>
+                 <p className="text-gray-600">May 10: Championship matches and crowning</p>
+               </div>
+             </div>
           </div>
-
-           <div className="grid md:grid-cols-3 gap-8">
-             <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center">
-                 <Trophy className="w-8 h-8 text-white" />
-               </div>
-               <h4 className="text-xl font-bold text-gray-900 mb-2">Group Stage</h4>
-               <p className="text-gray-600">May 6-8: Teams compete in round-robin format</p>
-             </div>
-
-             <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center">
-                 <Play className="w-8 h-8 text-white" />
-               </div>
-               <h4 className="text-xl font-bold text-gray-900 mb-2">Playoffs</h4>
-               <p className="text-gray-600">May 9: Single elimination bracket begins</p>
-             </div>
-
-             <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 flex items-center justify-center">
-                 <Trophy className="w-8 h-8 text-white" />
-               </div>
-               <h4 className="text-xl font-bold text-gray-900 mb-2">Finals</h4>
-               <p className="text-gray-600">May 10: Championship matches and crowning</p>
-             </div>
-           </div>
+        </div>
 
           <div className="text-center mt-8">
             <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300">

@@ -124,39 +124,42 @@ const GamesSection = () => {
         </div>
 
         {/* Tournament Overview */}
-        <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Tournament Overview</h3>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Each game features a unique tournament format designed to showcase the highest level of competitive play and ensure the most exciting matches for fans.
-            </p>
+        <div className="relative overflow-hidden rounded-3xl shadow-xl">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-10"></div>
+          <div className="relative bg-white p-8 md:p-12">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Tournament Overview</h3>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Each game features a unique tournament format designed to showcase the highest level of competitive play and ensure the most exciting matches for fans.
+              </p>
+            </div>
+
+             <div className="grid md:grid-cols-3 gap-8">
+               <div className="text-center">
+                 <div className="w-full h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+                   <Trophy className="w-12 h-12 text-white" />
+                 </div>
+                 <h4 className="text-xl font-bold text-gray-900 mb-2">Championship Format</h4>
+                 <p className="text-gray-600">Each game uses a specialized tournament format optimized for maximum excitement and fair competition.</p>
+               </div>
+
+               <div className="text-center">
+                 <div className="w-full h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+                   <Zap className="w-12 h-12 text-white" />
+                 </div>
+                 <h4 className="text-xl font-bold text-gray-900 mb-2">Live Spectating</h4>
+                 <p className="text-gray-600">Advanced spectator features provide multiple viewing angles and real-time statistics for each game.</p>
+               </div>
+
+               <div className="text-center">
+                 <div className="w-full h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+                   <Target className="w-12 h-12 text-white" />
+                 </div>
+                 <h4 className="text-xl font-bold text-gray-900 mb-2">Professional Standards</h4>
+                 <p className="text-gray-600">All matches follow professional esports standards with certified referees and anti-cheat systems.</p>
+               </div>
+             </div>
           </div>
-
-           <div className="grid md:grid-cols-3 gap-8">
-             <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center">
-                 <Trophy className="w-8 h-8 text-white" />
-               </div>
-               <h4 className="text-xl font-bold text-gray-900 mb-2">Championship Format</h4>
-               <p className="text-gray-600">Each game uses a specialized tournament format optimized for maximum excitement and fair competition.</p>
-             </div>
-
-             <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center">
-                 <Zap className="w-8 h-8 text-white" />
-               </div>
-               <h4 className="text-xl font-bold text-gray-900 mb-2">Live Spectating</h4>
-               <p className="text-gray-600">Advanced spectator features provide multiple viewing angles and real-time statistics for each game.</p>
-             </div>
-
-             <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center">
-                 <Target className="w-8 h-8 text-white" />
-               </div>
-               <h4 className="text-xl font-bold text-gray-900 mb-2">Professional Standards</h4>
-               <p className="text-gray-600">All matches follow professional esports standards with certified referees and anti-cheat systems.</p>
-             </div>
-           </div>
         </div>
       </div>
     </section>

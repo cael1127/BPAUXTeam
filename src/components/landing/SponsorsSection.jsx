@@ -121,37 +121,40 @@ const SponsorsSection = () => {
         </div>
 
         {/* Partnership Benefits */}
-        <div className="bg-white rounded-3xl shadow-xl p-8 mb-16">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Partnership Benefits</h3>
-            <p className="text-lg text-gray-600">Why our partners choose to work with us</p>
+        <div className="relative overflow-hidden rounded-3xl shadow-xl mb-16">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 opacity-10"></div>
+          <div className="relative bg-white p-8">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">Partnership Benefits</h3>
+              <p className="text-lg text-gray-600">Why our partners choose to work with us</p>
+            </div>
+
+             <div className="grid md:grid-cols-3 gap-8">
+               <div className="text-center">
+                 <div className="w-full h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center shadow-lg">
+                   <Globe className="w-12 h-12 text-white" />
+                 </div>
+                 <h4 className="text-xl font-bold text-gray-900 mb-2">Global Reach</h4>
+                 <p className="text-gray-600">Access to our international audience of esports fans and gaming enthusiasts</p>
+               </div>
+
+               <div className="text-center">
+                 <div className="w-full h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center shadow-lg">
+                   <Video className="w-12 h-12 text-white" />
+                 </div>
+                 <h4 className="text-xl font-bold text-gray-900 mb-2">Premium Exposure</h4>
+                 <p className="text-gray-600">High-visibility placement across all our digital platforms and live events</p>
+               </div>
+
+               <div className="text-center">
+                 <div className="w-full h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center shadow-lg">
+                   <Award className="w-12 h-12 text-white" />
+                 </div>
+                 <h4 className="text-xl font-bold text-gray-900 mb-2">Brand Association</h4>
+                 <p className="text-gray-600">Align your brand with the pinnacle of competitive gaming excellence</p>
+               </div>
+             </div>
           </div>
-
-           <div className="grid md:grid-cols-3 gap-8">
-             <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center">
-                 <Globe className="w-8 h-8 text-white" />
-               </div>
-               <h4 className="text-xl font-bold text-gray-900 mb-2">Global Reach</h4>
-               <p className="text-gray-600">Access to our international audience of esports fans and gaming enthusiasts</p>
-             </div>
-
-             <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center">
-                 <Video className="w-8 h-8 text-white" />
-               </div>
-               <h4 className="text-xl font-bold text-gray-900 mb-2">Premium Exposure</h4>
-               <p className="text-gray-600">High-visibility placement across all our digital platforms and live events</p>
-             </div>
-
-             <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center">
-                 <Award className="w-8 h-8 text-white" />
-               </div>
-               <h4 className="text-xl font-bold text-gray-900 mb-2">Brand Association</h4>
-               <p className="text-gray-600">Align your brand with the pinnacle of competitive gaming excellence</p>
-             </div>
-           </div>
         </div>
 
         {/* Become a Sponsor CTA */}
