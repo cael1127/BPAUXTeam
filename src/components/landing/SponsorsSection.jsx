@@ -129,7 +129,7 @@ const SponsorsSection = () => {
 
            <div className="grid md:grid-cols-3 gap-8">
              <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 flex items-center justify-center">
+               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center">
                  <Globe className="w-8 h-8 text-white" />
                </div>
                <h4 className="text-xl font-bold text-gray-900 mb-2">Global Reach</h4>
@@ -137,7 +137,7 @@ const SponsorsSection = () => {
              </div>
 
              <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 flex items-center justify-center">
+               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center">
                  <Video className="w-8 h-8 text-white" />
                </div>
                <h4 className="text-xl font-bold text-gray-900 mb-2">Premium Exposure</h4>
@@ -145,7 +145,7 @@ const SponsorsSection = () => {
              </div>
 
              <div className="text-center">
-               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 flex items-center justify-center">
+               <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center">
                  <Award className="w-8 h-8 text-white" />
                </div>
                <h4 className="text-xl font-bold text-gray-900 mb-2">Brand Association</h4>

@@ -161,9 +161,9 @@ const AboutSection = () => {
                 ref={el => featuresRefs.current[index] = el}
               >
                 <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-r ${
-                  index === 0 ? 'from-yellow-500 via-orange-500 to-red-500' :
-                  index === 1 ? 'from-yellow-500 via-orange-500 to-red-500' :
-                  'from-yellow-500 via-orange-500 to-red-500'
+                  index === 0 ? 'from-purple-500 via-pink-500 to-blue-500' :
+                  index === 1 ? 'from-purple-500 via-pink-500 to-blue-500' :
+                  'from-purple-500 via-pink-500 to-blue-500'
                 } flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
