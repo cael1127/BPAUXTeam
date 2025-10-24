@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Smartphone, Download, Star, Users, Trophy, MessageCircle, BarChart3, Play, QrCode } from 'lucide-react';
+import { useScrollAnimation, useStaggeredAnimation } from '../../hooks/useScrollAnimation';
 
 const MobileAppSection = () => {
   const [activeScreen, setActiveScreen] = useState(0);
@@ -11,7 +12,7 @@ const MobileAppSection = () => {
       icon: Trophy,
       description: 'Real-time match updates and live scoring',
       features: ['Live match tracking', 'Score notifications', 'Match history', 'Team standings'],
-      color: 'from-red-500 to-pink-500'
+      color: 'from-purple-600 via-pink-600 to-blue-600'
     },
     {
       id: 'stats',
@@ -19,7 +20,7 @@ const MobileAppSection = () => {
       icon: BarChart3,
       description: 'Detailed player statistics and performance analytics',
       features: ['Player profiles', 'Performance metrics', 'Match statistics', 'Career highlights'],
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-purple-600 via-pink-600 to-blue-600'
     },
     {
       id: 'replays',
@@ -27,7 +28,7 @@ const MobileAppSection = () => {
       icon: Play,
       description: 'Watch full match replays and highlights',
       features: ['Full match replays', 'Highlight reels', 'Multiple camera angles', 'Slow motion analysis'],
-      color: 'from-purple-500 to-pink-500'
+      color: 'from-purple-600 via-pink-600 to-blue-600'
     },
     {
       id: 'brackets',
@@ -35,7 +36,7 @@ const MobileAppSection = () => {
       icon: Users,
       description: 'Interactive tournament brackets and progression',
       features: ['Live bracket updates', 'Match predictions', 'Team progress', 'Elimination tracking'],
-      color: 'from-green-500 to-emerald-500'
+      color: 'from-purple-600 via-pink-600 to-blue-600'
     },
     {
       id: 'chat',
@@ -43,7 +44,7 @@ const MobileAppSection = () => {
       icon: MessageCircle,
       description: 'Connect with other fans and discuss matches',
       features: ['Live chat rooms', 'Team discussions', 'Fan predictions', 'Social features'],
-      color: 'from-indigo-500 to-purple-500'
+      color: 'from-purple-600 via-pink-600 to-blue-600'
     }
   ];
 
@@ -65,13 +66,20 @@ const MobileAppSection = () => {
     }
   ];
 
+  // Scroll animation hooks
+  const [sectionRef, isSectionVisible] = useScrollAnimation();
+  const [featuresRefs, visibleFeatures] = useStaggeredAnimation(appFeatures, 100);
+
   return (
     <section id="mobile-app" className="py-20 bg-gradient-to-br from-gray-900 to-purple-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div 
+          ref={sectionRef}
+          className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Mobile <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">App</span>
+            Mobile <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">App</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Experience the championship like never before with our comprehensive mobile app featuring all 5 required screens.
@@ -191,8 +199,12 @@ const MobileAppSection = () => {
             {/* App Features */}
             <div className="grid grid-cols-1 gap-4">
               {appFeatures.map((feature, index) => (
-                <div key={index} className="flex items-center p-4 bg-gray-800 rounded-xl">
-                  <div className="w-10 h-10 rounded-lg bg-purple-600 flex items-center justify-center mr-4">
+                <div 
+                  key={index} 
+                  className={`flex items-center p-4 bg-gray-800 rounded-xl scroll-reveal-stagger ${visibleFeatures.has(index) ? 'revealed' : ''}`}
+                  ref={el => featuresRefs.current[index] = el}
+                >
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex items-center justify-center mr-4">
                     <feature.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>

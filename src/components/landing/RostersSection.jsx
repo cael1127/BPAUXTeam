@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Search, Filter, Trophy, Users, MapPin, Star, ChevronDown } from 'lucide-react';
 import { teams, getTeamsByGame, getAllTeams } from '../../data/teams';
+import { useScrollAnimation, useStaggeredAnimation } from '../../hooks/useScrollAnimation';
 
 const RostersSection = () => {
   const [selectedGame, setSelectedGame] = useState('all');
@@ -30,13 +31,20 @@ const RostersSection = () => {
 
   const filteredTeams = getFilteredTeams();
 
+  // Scroll animation hooks
+  const [sectionRef, isSectionVisible] = useScrollAnimation();
+  const [teamsRefs, visibleTeams] = useStaggeredAnimation(filteredTeams, 100);
+
   return (
     <section id="rosters" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div 
+          ref={sectionRef}
+          className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Competing <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Teams</span>
+            Competing <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Teams</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Meet the world's best esports teams competing for championship glory across three major titles.
@@ -81,7 +89,11 @@ const RostersSection = () => {
         {/* Teams Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-16">
           {filteredTeams.map((team, index) => (
-            <div key={team.id} className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <div 
+              key={team.id} 
+              className={`group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300 scroll-reveal-stagger ${visibleTeams.has(index) ? 'revealed' : ''}`}
+              ref={el => teamsRefs.current[index] = el}
+            >
               {/* Team Header */}
               <div className={`h-28 sm:h-32 bg-gradient-to-r ${team.color} relative overflow-hidden`}>
                 <div className="absolute inset-0 bg-black/20"></div>
@@ -135,7 +147,7 @@ const RostersSection = () => {
                 </div>
 
                 {/* View Team Button */}
-                <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-2 px-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300">
+                <button className="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300">
                   View Team Details
                 </button>
               </div>
@@ -152,9 +164,9 @@ const RostersSection = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { name: 'Team Phoenix', game: 'Valorant', achievement: '2025 VCT Masters Winner', color: 'from-red-500 to-pink-500' },
-              { name: 'Aerial Assassins', game: 'Rocket League', achievement: '2025 RLCS World Champion', color: 'from-blue-500 to-sky-500' },
-              { name: 'Elite Warriors', game: 'Super Smash Bros', achievement: '2025 Smash Ultimate Major Winner', color: 'from-red-500 to-pink-500' }
+              { name: 'Team Phoenix', game: 'Valorant', achievement: '2025 VCT Masters Winner', color: 'from-purple-600 via-pink-600 to-blue-600' },
+              { name: 'Aerial Assassins', game: 'Rocket League', achievement: '2025 RLCS World Champion', color: 'from-purple-600 via-pink-600 to-blue-600' },
+              { name: 'Elite Warriors', game: 'Super Smash Bros', achievement: '2025 Smash Ultimate Major Winner', color: 'from-purple-600 via-pink-600 to-blue-600' }
             ].map((team, index) => (
               <div key={index} className="text-center group">
                 <div className={`w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-r ${team.color} flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>

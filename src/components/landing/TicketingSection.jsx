@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Ticket, Star, Check, Users, Clock, Shield, Gift, CreditCard } from 'lucide-react';
 import { ticketTiers, groupDiscounts, addOns } from '../../data/tickets';
+import { useScrollAnimation, useStaggeredAnimation } from '../../hooks/useScrollAnimation';
 
 const TicketingSection = () => {
   const [selectedTier, setSelectedTier] = useState(null);
@@ -28,13 +29,20 @@ const TicketingSection = () => {
     return Math.round((basePrice * quantity + addOnTotal) * discountMultiplier);
   };
 
+  // Scroll animation hooks
+  const [sectionRef, isSectionVisible] = useScrollAnimation();
+  const [ticketsRefs, visibleTickets] = useStaggeredAnimation(ticketTiers, 100);
+
   return (
     <section id="ticketing" className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div 
+          ref={sectionRef}
+          className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Get Your <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Tickets</span>
+            Get Your <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Tickets</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choose your perfect championship experience with our flexible ticket options and exclusive perks.
@@ -42,7 +50,7 @@ const TicketingSection = () => {
         </div>
 
         {/* Early Bird Banner */}
-        <div className="bg-gradient-to-r from-yellow-400 to-pink-500 rounded-2xl p-6 mb-12 text-center">
+        <div className="bg-gradient-to-r from-yellow-400 via-pink-500 to-blue-500 rounded-2xl p-6 mb-12 text-center">
           <div className="flex items-center justify-center mb-2">
             <Gift className="w-6 h-6 text-white mr-2" />
             <span className="text-white font-bold text-lg">Early Bird Special - Save up to 25%!</span>
@@ -52,12 +60,16 @@ const TicketingSection = () => {
 
         {/* Ticket Tiers */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 mb-16">
-          {ticketTiers.map((tier) => (
-            <div key={tier.id} className={`relative bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 ${
-              tier.popular ? 'ring-2 ring-purple-500' : ''
-            }`}>
+          {ticketTiers.map((tier, index) => (
+            <div 
+              key={tier.id} 
+              className={`relative bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 scroll-reveal-stagger ${visibleTickets.has(index) ? 'revealed' : ''} ${
+                tier.popular ? 'ring-2 ring-purple-500' : ''
+              }`}
+              ref={el => ticketsRefs.current[index] = el}
+            >
               {tier.popular && (
-                <div className="absolute top-0 right-0 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-1 text-sm font-bold rounded-bl-2xl">
+                <div className="absolute top-0 right-0 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white px-4 py-1 text-sm font-bold rounded-bl-2xl">
                   Most Popular
                 </div>
               )}

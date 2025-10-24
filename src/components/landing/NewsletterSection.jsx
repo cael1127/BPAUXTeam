@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Send, Check, Users, Bell, MessageCircle, Download, ArrowRight } from 'lucide-react';
+import { useScrollAnimation, useStaggeredAnimation } from '../../hooks/useScrollAnimation';
 
 const NewsletterSection = () => {
   const [email, setEmail] = useState('');
@@ -54,19 +55,27 @@ const NewsletterSection = () => {
   ];
 
   const communityStats = [
-    { icon: Users, label: 'Discord Members', value: '12,547', color: 'from-indigo-500 to-purple-500' },
-    { icon: Mail, label: 'Newsletter Subscribers', value: '8,923', color: 'from-blue-500 to-cyan-500' },
-    { icon: MessageCircle, label: 'Social Followers', value: '45,678', color: 'from-pink-500 to-rose-500' },
-    { icon: Bell, label: 'Push Notifications', value: '23,456', color: 'from-green-500 to-emerald-500' }
+    { icon: Users, label: 'Discord Members', value: '12,547', color: 'from-purple-600 via-pink-600 to-blue-600' },
+    { icon: Mail, label: 'Newsletter Subscribers', value: '8,923', color: 'from-purple-600 via-pink-600 to-blue-600' },
+    { icon: MessageCircle, label: 'Social Followers', value: '45,678', color: 'from-purple-600 via-pink-600 to-blue-600' },
+    { icon: Bell, label: 'Push Notifications', value: '23,456', color: 'from-purple-600 via-pink-600 to-blue-600' }
   ];
+
+  // Scroll animation hooks
+  const [sectionRef, isSectionVisible] = useScrollAnimation();
+  const [statsRefs, visibleStats] = useStaggeredAnimation(communityStats, 100);
+  const [newsRefs, visibleNews] = useStaggeredAnimation(newsItems, 150);
 
   return (
     <section id="newsletter" className="py-20 bg-gradient-to-br from-gray-900 to-purple-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div 
+          ref={sectionRef}
+          className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Stay <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Connected</span>
+            Stay <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">Connected</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Join our community and never miss an update about the championship.
@@ -96,7 +105,7 @@ const NewsletterSection = () => {
                   </div>
                   <button
                     type="submit"
-                    className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300 flex items-center justify-center"
+                    className="px-8 py-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white font-bold rounded-xl hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 transition-all duration-300 flex items-center justify-center"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Subscribe
@@ -142,7 +151,11 @@ const NewsletterSection = () => {
         {/* Community Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {communityStats.map((stat, index) => (
-            <div key={index} className="text-center">
+            <div 
+              key={index} 
+              className={`text-center scroll-reveal-stagger ${visibleStats.has(index) ? 'revealed' : ''}`}
+              ref={el => statsRefs.current[index] = el}
+            >
               <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r ${stat.color} flex items-center justify-center`}>
                 <stat.icon className="w-8 h-8 text-white" />
               </div>
@@ -161,7 +174,11 @@ const NewsletterSection = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {newsItems.map((item, index) => (
-              <div key={index} className="bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
+              <div 
+                key={index} 
+                className={`bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 scroll-reveal-stagger ${visibleNews.has(index) ? 'revealed' : ''}`}
+                ref={el => newsRefs.current[index] = el}
+              >
                 <div className="flex items-center justify-between mb-3">
                   <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium">
                     {item.category}
@@ -180,7 +197,7 @@ const NewsletterSection = () => {
         </div>
 
         {/* Discord Community */}
-        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 text-center">
+        <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-3xl p-8 text-center">
           <div className="max-w-4xl mx-auto">
             <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-white/20 flex items-center justify-center">
               <MessageCircle className="w-10 h-10 text-white" />

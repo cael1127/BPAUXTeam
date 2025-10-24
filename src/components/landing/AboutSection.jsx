@@ -1,6 +1,7 @@
 import React from 'react';
 import { Trophy, Users, DollarSign, Calendar, MapPin, Target, Zap, Star } from 'lucide-react';
 import { getTotalPrizePool, getTotalTeams } from '../../data/games';
+import { useScrollAnimation, useStaggeredAnimation } from '../../hooks/useScrollAnimation';
 
 const AboutSection = () => {
   const totalPrizePool = getTotalPrizePool();
@@ -11,25 +12,25 @@ const AboutSection = () => {
       icon: Trophy,
       value: '$1M+',
       label: 'Prize Pool',
-      color: 'from-yellow-500 to-pink-500'
+      color: 'from-purple-600 via-pink-600 to-blue-600'
     },
     {
       icon: Users,
       value: totalTeams.toString(),
       label: 'Competing Teams',
-      color: 'from-pink-500 to-pink-600'
+      color: 'from-purple-600 via-pink-600 to-blue-600'
     },
     {
       icon: Calendar,
       value: '5',
       label: 'Days of Action',
-      color: 'from-purple-500 to-pink-500'
+      color: 'from-purple-600 via-pink-600 to-blue-600'
     },
     {
       icon: MapPin,
       value: '3',
       label: 'Featured Games',
-      color: 'from-pink-500 to-pink-600'
+      color: 'from-purple-600 via-pink-600 to-blue-600'
     }
   ];
 
@@ -51,13 +52,21 @@ const AboutSection = () => {
     }
   ];
 
+  // Scroll animation hooks
+  const [sectionRef, isSectionVisible] = useScrollAnimation();
+  const [statsRefs, visibleStats] = useStaggeredAnimation(stats, 100);
+  const [featuresRefs, visibleFeatures] = useStaggeredAnimation(features, 150);
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div 
+          ref={sectionRef}
+          className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            The Ultimate <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Esports Championship</span>
+            The Ultimate <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">Esports Championship</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join us in Nashville for the most prestigious esports event of 2026, featuring the world's top teams competing across three major titles for a share of over $1 million in prizes.
@@ -67,7 +76,11 @@ const AboutSection = () => {
         {/* Statistics Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center group">
+            <div 
+              key={index} 
+              className={`text-center group scroll-reveal-stagger ${visibleStats.has(index) ? 'revealed' : ''}`}
+              ref={el => statsRefs.current[index] = el}
+            >
               <div className={`w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-r ${stat.color} flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>
                 <stat.icon className="w-10 h-10 text-white" />
               </div>
@@ -142,8 +155,12 @@ const AboutSection = () => {
           <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">Championship Features</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="text-center group">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
+              <div 
+                key={index} 
+                className={`text-center group scroll-reveal-stagger ${visibleFeatures.has(index) ? 'revealed' : ''}`}
+                ref={el => featuresRefs.current[index] = el}
+              >
+                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h4>
