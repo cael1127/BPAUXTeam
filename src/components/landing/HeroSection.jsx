@@ -95,7 +95,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Event Logo/Badge */}
-        <div className="mb-12 animate-fade-in">
+        <div className="mb-16 animate-fade-in">
           <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
             <Trophy className="w-6 h-6 text-yellow-400 mr-2" />
             <span className="text-white font-semibold">National Esports Championship Series</span>
