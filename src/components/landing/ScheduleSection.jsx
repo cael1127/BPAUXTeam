@@ -157,7 +157,7 @@ const ScheduleSection = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
                 <Trophy className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">Group Stage</h4>
@@ -165,7 +165,7 @@ const ScheduleSection = () => {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-pink-500 to-blue-500 flex items-center justify-center">
                 <Play className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">Playoffs</h4>
@@ -173,7 +173,7 @@ const ScheduleSection = () => {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
                 <Trophy className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-2">Finals</h4>

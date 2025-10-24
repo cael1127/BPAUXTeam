@@ -201,7 +201,7 @@ const LivestreamsSection = () => {
             {upcomingStreams.map((stream, index) => (
               <div key={index} className="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-lg flex items-center justify-center mr-4">
                     <span className="text-white font-bold">{stream.time}</span>
                   </div>
                   <div>
