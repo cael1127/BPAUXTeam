@@ -12,7 +12,7 @@ const MobileAppSection = () => {
       icon: Trophy,
       description: 'Real-time match updates and live scoring',
       features: ['Live match tracking', 'Score notifications', 'Match history', 'Team standings'],
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-red-500 via-orange-500 to-yellow-500'
     },
     {
       id: 'stats',
@@ -20,7 +20,7 @@ const MobileAppSection = () => {
       icon: BarChart3,
       description: 'Detailed player statistics and performance analytics',
       features: ['Player profiles', 'Performance metrics', 'Match statistics', 'Career highlights'],
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-blue-500 via-purple-500 to-pink-500'
     },
     {
       id: 'replays',
@@ -28,7 +28,7 @@ const MobileAppSection = () => {
       icon: Play,
       description: 'Watch full match replays and highlights',
       features: ['Full match replays', 'Highlight reels', 'Multiple camera angles', 'Slow motion analysis'],
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-purple-500 via-pink-500 to-blue-500'
     },
     {
       id: 'brackets',
@@ -36,7 +36,7 @@ const MobileAppSection = () => {
       icon: Users,
       description: 'Interactive tournament brackets and progression',
       features: ['Live bracket updates', 'Match predictions', 'Team progress', 'Elimination tracking'],
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-green-500 via-teal-500 to-cyan-500'
     },
     {
       id: 'chat',
@@ -44,7 +44,7 @@ const MobileAppSection = () => {
       icon: MessageCircle,
       description: 'Connect with other fans and discuss matches',
       features: ['Live chat rooms', 'Team discussions', 'Fan predictions', 'Social features'],
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-pink-500 via-purple-500 to-indigo-500'
     }
   ];
 
@@ -204,7 +204,11 @@ const MobileAppSection = () => {
                   className={`flex items-center p-4 bg-gray-800 rounded-xl scroll-reveal-stagger ${visibleFeatures.has(index) ? 'revealed' : ''}`}
                   ref={el => featuresRefs.current[index] = el}
                 >
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex items-center justify-center mr-4">
+                  <div className={`w-10 h-10 rounded-lg bg-gradient-to-r ${
+                    index === 0 ? 'from-blue-500 to-purple-500' :
+                    index === 1 ? 'from-purple-500 to-pink-500' :
+                    'from-pink-500 to-blue-500'
+                  } flex items-center justify-center mr-4`}>
                     <feature.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>

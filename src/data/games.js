@@ -2,7 +2,7 @@ export const games = [
   {
     name: 'Valorant',
     icon: '🎯',
-    color: 'from-purple-600 to-pink-600',
+    color: 'from-red-500 via-orange-500 to-yellow-500',
     description: 'Tactical 5v5 character-based shooter where precise aim meets strategic gameplay',
     prizePool: '$500,000',
     teams: 16,
@@ -32,7 +32,7 @@ export const games = [
   {
     name: 'Rocket League',
     icon: '🚗',
-    color: 'from-blue-600 to-cyan-600',
+    color: 'from-blue-500 via-cyan-500 to-teal-500',
     description: 'High-octane vehicular soccer with physics-defying aerial maneuvers',
     prizePool: '$300,000',
     teams: 12,
@@ -62,7 +62,7 @@ export const games = [
   {
     name: 'Super Smash Bros',
     icon: '🥊',
-    color: 'from-red-600 to-orange-600',
+    color: 'from-purple-500 via-pink-500 to-rose-500',
     description: 'Ultimate fighting game featuring iconic characters in epic battles',
     prizePool: '$200,000',
     teams: 24,

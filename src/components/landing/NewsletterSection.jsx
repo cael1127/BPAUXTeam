@@ -55,10 +55,10 @@ const NewsletterSection = () => {
   ];
 
   const communityStats = [
-    { icon: Users, label: 'Discord Members', value: '12,547', color: 'from-purple-600 via-pink-600 to-blue-600' },
-    { icon: Mail, label: 'Newsletter Subscribers', value: '8,923', color: 'from-purple-600 via-pink-600 to-blue-600' },
-    { icon: MessageCircle, label: 'Social Followers', value: '45,678', color: 'from-purple-600 via-pink-600 to-blue-600' },
-    { icon: Bell, label: 'Push Notifications', value: '23,456', color: 'from-purple-600 via-pink-600 to-blue-600' }
+    { icon: Users, label: 'Discord Members', value: '12,547', color: 'from-blue-500 via-purple-500 to-pink-500' },
+    { icon: Mail, label: 'Newsletter Subscribers', value: '8,923', color: 'from-purple-500 via-pink-500 to-blue-500' },
+    { icon: MessageCircle, label: 'Social Followers', value: '45,678', color: 'from-pink-500 via-purple-500 to-blue-500' },
+    { icon: Bell, label: 'Push Notifications', value: '23,456', color: 'from-cyan-500 via-blue-500 to-purple-500' }
   ];
 
   // Scroll animation hooks
@@ -197,7 +197,7 @@ const NewsletterSection = () => {
         </div>
 
         {/* Discord Community */}
-        <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-3xl p-8 text-center">
+        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-8 text-center">
           <div className="max-w-4xl mx-auto">
             <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-white/20 flex items-center justify-center">
               <MessageCircle className="w-10 h-10 text-white" />

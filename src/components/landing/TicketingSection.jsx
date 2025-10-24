@@ -50,7 +50,7 @@ const TicketingSection = () => {
         </div>
 
         {/* Early Bird Banner */}
-        <div className="bg-gradient-to-r from-yellow-400 via-pink-500 to-blue-500 rounded-2xl p-6 mb-12 text-center">
+        <div className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 rounded-2xl p-6 mb-12 text-center">
           <div className="flex items-center justify-center mb-2">
             <Gift className="w-6 h-6 text-white mr-2" />
             <span className="text-white font-bold text-lg">Early Bird Special - Save up to 25%!</span>

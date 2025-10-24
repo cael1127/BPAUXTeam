@@ -22,7 +22,7 @@ const SponsorsSection = () => {
         <div className="mb-16">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">{sponsors.tiers.title}</h3>
-            <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-pink-500 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 mx-auto rounded-full"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {sponsors.tiers.sponsors.map((sponsor, index) => (

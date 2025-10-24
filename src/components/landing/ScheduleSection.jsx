@@ -30,9 +30,9 @@ const ScheduleSection = () => {
 
   const getGameColor = (game) => {
     switch(game) {
-      case 'Valorant': return 'from-purple-500 to-pink-500';
-      case 'Rocket League': return 'from-blue-500 to-cyan-500';
-      case 'Super Smash Bros': return 'from-red-500 to-pink-500';
+      case 'Valorant': return 'from-red-500 via-orange-500 to-yellow-500';
+      case 'Rocket League': return 'from-blue-500 via-cyan-500 to-teal-500';
+      case 'Super Smash Bros': return 'from-purple-500 via-pink-500 to-rose-500';
       default: return 'from-gray-500 to-gray-600';
     }
   };

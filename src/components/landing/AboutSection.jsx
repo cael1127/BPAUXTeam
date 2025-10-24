@@ -12,25 +12,25 @@ const AboutSection = () => {
       icon: Trophy,
       value: '$1M+',
       label: 'Prize Pool',
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-yellow-400 via-orange-500 to-red-500'
     },
     {
       icon: Users,
       value: totalTeams.toString(),
       label: 'Competing Teams',
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-purple-500 via-pink-500 to-blue-500'
     },
     {
       icon: Calendar,
       value: '5',
       label: 'Days of Action',
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-blue-500 via-purple-500 to-pink-500'
     },
     {
       icon: MapPin,
       value: '3',
       label: 'Featured Games',
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-pink-500 via-purple-500 to-blue-500'
     }
   ];
 
@@ -160,7 +160,11 @@ const AboutSection = () => {
                 className={`text-center group scroll-reveal-stagger ${visibleFeatures.has(index) ? 'revealed' : ''}`}
                 ref={el => featuresRefs.current[index] = el}
               >
-                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
+                <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-r ${
+                  index === 0 ? 'from-purple-500 to-pink-500' :
+                  index === 1 ? 'from-blue-500 to-purple-500' :
+                  'from-pink-500 to-blue-500'
+                } flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h4>

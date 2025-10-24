@@ -28,7 +28,7 @@ const VenueSection = () => {
         </div>
 
         {/* Venue Overview */}
-        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl p-8 mb-16">
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 mb-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">{venue.name}</h3>
