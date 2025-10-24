@@ -18,13 +18,13 @@ const AboutSection = () => {
       icon: Users,
       value: totalTeams.toString(),
       label: 'Competing Teams',
-      color: 'from-purple-600 via-pink-600 to-blue-600'
+      color: 'from-red-500 via-purple-500 to-pink-500'
     },
     {
       icon: Calendar,
       value: '5',
       label: 'Days of Action',
-      color: 'from-blue-600 via-purple-600 to-pink-600'
+      color: 'from-pink-500 via-purple-500 to-blue-500'
     },
     {
       icon: MapPin,
@@ -161,9 +161,9 @@ const AboutSection = () => {
                 ref={el => featuresRefs.current[index] = el}
               >
                  <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-r ${
-                   index === 0 ? 'from-purple-600 to-pink-600' :
-                   index === 1 ? 'from-blue-600 to-purple-600' :
-                   'from-pink-600 to-blue-600'
+                   index === 0 ? 'from-red-500 via-purple-500 to-pink-500' :
+                   index === 1 ? 'from-pink-500 via-purple-500 to-blue-500' :
+                   'from-red-500 via-purple-500 to-pink-500'
                  } flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
