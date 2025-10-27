@@ -13,6 +13,7 @@ import TicketingSection from './components/landing/TicketingSection';
 import VenueSection from './components/landing/VenueSection';
 import SponsorsSection from './components/landing/SponsorsSection';
 import MobileAppSection from './components/landing/MobileAppSection';
+import SocialMediaSection from './components/landing/SocialMediaSection';
 import NewsletterSection from './components/landing/NewsletterSection';
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
       <VenueSection />
       <SponsorsSection />
       <MobileAppSection />
+      <SocialMediaSection />
       <NewsletterSection />
       </div>
 

@@ -61,7 +61,7 @@ export const teams = {
       color: "from-yellow-500 to-orange-500"
     }
   ],
-  rocketLeague: [
+  rocketleague: [
     {
       id: 7,
       name: "Aerial Assassins",
@@ -123,7 +123,7 @@ export const teams = {
       color: "from-cyan-500 to-teal-500"
     }
   ],
-  smashBros: [
+  smashbros: [
     {
       id: 13,
       name: "Elite Warriors",
@@ -199,7 +199,7 @@ export const getAllTeams = () => {
 export const getFeaturedTeams = () => {
   return [
     teams.valorant[0], // Team Phoenix
-    teams.rocketLeague[0], // Aerial Assassins
-    teams.smashBros[0] // Elite Warriors
+    teams.rocketleague[0], // Aerial Assassins
+    teams.smashbros[0] // Elite Warriors
   ];
 };

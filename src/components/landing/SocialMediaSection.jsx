@@ -79,15 +79,19 @@ const SocialMediaSection = () => {
   const hashtags = ['#NSCS2026', '#EsportsChampionship', '#NashvilleGaming', '#Valorant', '#RocketLeague', '#SmashBros'];
 
   return (
-    <section id="social-media" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+    <section id="social-media" className="py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-purple-100 rounded-full mb-6">
+            <Share2 className="w-5 h-5 text-purple-600 mr-2" />
+            <span className="text-purple-700 font-semibold">Downloadable Assets</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Social <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Media</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Connect with us across all platforms and download our official social media assets.
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
+            Download our official social media assets and connect with us across all platforms.
           </p>
         </div>
 

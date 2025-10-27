@@ -38,6 +38,11 @@ export const useStaggeredAnimation = (items, delay = 100) => {
   const refs = useRef([]);
 
   useEffect(() => {
+    // Reset visible items when items change
+    setVisibleItems(new Set());
+    // Ensure refs array matches items length
+    refs.current = new Array(items.length).fill(null);
+    
     const observers = items.map((_, index) => {
       return new IntersectionObserver(
         ([entry]) => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Smartphone, Download, Star, Users, Trophy, MessageCircle, BarChart3, Play, QrCode } from 'lucide-react';
+import { Smartphone, Download, Star, Users, Trophy, MessageCircle, BarChart3, Play, QrCode, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useScrollAnimation, useStaggeredAnimation } from '../../hooks/useScrollAnimation';
 
 const MobileAppSection = () => {
@@ -94,23 +94,59 @@ const MobileAppSection = () => {
     }
   };
 
+  const nextScreen = () => {
+    setActiveScreen((prev) => (prev < screens.length - 1 ? prev + 1 : 0));
+  };
+
+  const prevScreen = () => {
+    setActiveScreen((prev) => (prev > 0 ? prev - 1 : screens.length - 1));
+  };
+
+  // Keyboard navigation
+  React.useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.key === 'ArrowRight') {
+        nextScreen();
+      } else if (e.key === 'ArrowLeft') {
+        prevScreen();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, []);
+
   // Scroll animation hooks
   const [sectionRef, isSectionVisible] = useScrollAnimation();
   const [featuresRefs, visibleFeatures] = useStaggeredAnimation(appFeatures, 100);
 
   return (
-    <section id="mobile-app" className="py-20 bg-gradient-to-br from-gray-900 to-purple-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="mobile-app" className="py-24 bg-gradient-to-br from-purple-950 via-purple-900 to-blue-900 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div 
           ref={sectionRef}
           className={`text-center mb-16 scroll-reveal ${isSectionVisible ? 'revealed' : ''}`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
+            <Smartphone className="w-5 h-5 text-purple-400 mr-2" />
+            <span className="text-white font-semibold">Mobile App Preview</span>
+          </div>
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
             Mobile <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">App</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-4">
             Experience the championship like never before with our comprehensive mobile app featuring all 5 required screens.
+          </p>
+          <p className="text-lg text-purple-300 font-semibold">
+            Swipe, click arrows, or use keyboard (← →) to navigate
           </p>
         </div>
 
@@ -134,6 +170,15 @@ const MobileAppSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Phone Mockup */}
           <div className="relative">
+            {/* Left Arrow Button - Desktop Only */}
+            <button
+              onClick={prevScreen}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 hidden lg:flex items-center justify-center w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white hover:bg-white/30 transition-all duration-300 z-10 hover:scale-110"
+              aria-label="Previous screen"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            
             <div 
               className="relative mx-auto w-80 h-[600px] bg-gray-800 rounded-[3rem] p-2 shadow-2xl"
               onTouchStart={onTouchStart}
@@ -218,12 +263,21 @@ const MobileAppSection = () => {
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
                 </svg>
-                Swipe to navigate
+                Swipe or use arrows
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </span>
             </div>
+            
+            {/* Right Arrow Button - Desktop Only */}
+            <button
+              onClick={nextScreen}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 hidden lg:flex items-center justify-center w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white hover:bg-white/30 transition-all duration-300 z-10 hover:scale-110"
+              aria-label="Next screen"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
           </div>
 
           {/* App Details */}
