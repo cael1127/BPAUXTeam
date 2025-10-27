@@ -164,9 +164,9 @@ const RostersSection = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { name: 'Team Phoenix', game: 'Valorant', achievement: '2025 VCT Masters Winner', color: 'from-red-500 via-orange-500 to-yellow-500' },
-              { name: 'Aerial Assassins', game: 'Rocket League', achievement: '2025 RLCS World Champion', color: 'from-blue-600 via-cyan-600 to-teal-600' },
-              { name: 'Elite Warriors', game: 'Super Smash Bros', achievement: '2025 Smash Ultimate Major Winner', color: 'from-purple-500 via-pink-500 to-rose-500' }
+              { name: 'Sentinels', game: 'Valorant', achievement: 'VCT Champions 2024', color: 'from-red-600 to-orange-600' },
+              { name: 'Karmine Corp', game: 'Rocket League', achievement: 'RLCS World Champion 2024', color: 'from-blue-600 to-cyan-600' },
+              { name: 'MkLeo', game: 'Super Smash Bros', achievement: 'EVO 2024 Champion', color: 'from-red-600 to-pink-600' }
             ].map((team, index) => (
               <div key={index} className="text-center group">
                 <div className={`w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-r ${team.color} flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>

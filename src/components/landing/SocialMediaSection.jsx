@@ -70,7 +70,7 @@ const SocialMediaSection = () => {
     },
     {
       platform: 'twitch',
-      content: 'Live now: Team Phoenix vs Velocity Esports - Championship Finals!',
+      content: 'Live now: Sentinels vs Fnatic - Championship Finals!',
       engagement: { viewers: 45678, likes: 3456 },
       time: 'LIVE'
     }

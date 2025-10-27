@@ -14,7 +14,7 @@ const LivestreamsSection = () => {
       viewers: 28456,
       status: 'live',
       thumbnail: '🎯',
-      description: 'Team Phoenix vs Velocity Esports - Grand Finals'
+      description: 'Sentinels vs Fnatic - Grand Finals'
     },
     {
       id: 2,
@@ -23,16 +23,16 @@ const LivestreamsSection = () => {
       viewers: 12345,
       status: 'live',
       thumbnail: '🚗',
-      description: 'Aerial Assassins vs Velocity Vipers'
+      description: 'Karmine Corp vs Team BDS'
     },
     {
       id: 3,
-      title: 'Player POV - Elite Warriors',
+      title: 'Player POV - MkLeo',
       game: 'Super Smash Bros',
       viewers: 8765,
       status: 'live',
       thumbnail: '🥊',
-      description: 'Elite Warriors vs Combo Kings - Player Perspective'
+      description: 'MkLeo vs Sparg0 - Player Perspective'
     },
     {
       id: 4,
@@ -118,7 +118,7 @@ const LivestreamsSection = () => {
                     <Play className="w-10 h-10 sm:w-12 sm:h-12 text-white ml-1" />
                   )}
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Team Phoenix vs Velocity Esports</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Sentinels vs Fnatic</h3>
                 <p className="text-white/80 text-sm sm:text-base">Valorant Championship - Grand Finals</p>
                 
                 {/* Live Indicator */}

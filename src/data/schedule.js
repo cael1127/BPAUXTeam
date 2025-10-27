@@ -7,7 +7,7 @@ export const schedule = {
         time: "10:00 AM",
         stage: "Main Stage",
         game: "Valorant",
-        match: "Team Phoenix vs Velocity Esports",
+        match: "Sentinels vs Fnatic",
         type: "Group Stage",
         duration: "2 hours"
       },
@@ -15,7 +15,7 @@ export const schedule = {
         time: "1:00 PM",
         stage: "Stage 2",
         game: "Rocket League",
-        match: "Aerial Assassins vs Velocity Vipers",
+        match: "Karmine Corp vs Team BDS",
         type: "Group Stage",
         duration: "1.5 hours"
       },
@@ -23,7 +23,7 @@ export const schedule = {
         time: "3:00 PM",
         stage: "Main Stage",
         game: "Super Smash Bros",
-        match: "Elite Warriors vs Combo Kings",
+        match: "MkLeo vs Sparg0",
         type: "Group Stage",
         duration: "1 hour"
       },
@@ -31,7 +31,7 @@ export const schedule = {
         time: "5:00 PM",
         stage: "Stage 2",
         game: "Valorant",
-        match: "Shadow Strike vs Nexus Gaming",
+        match: "Paper Rex vs 100 Thieves",
         type: "Group Stage",
         duration: "2 hours"
       },
@@ -39,7 +39,7 @@ export const schedule = {
         time: "7:00 PM",
         stage: "Main Stage",
         game: "Rocket League",
-        match: "Cosmic Carriers vs Turbo Titans",
+        match: "Moist Esports vs GenG",
         type: "Group Stage",
         duration: "1.5 hours"
       }
@@ -53,7 +53,7 @@ export const schedule = {
         time: "10:00 AM",
         stage: "Main Stage",
         game: "Super Smash Bros",
-        match: "Tech Masters vs Spike Squad",
+        match: "acola vs Light",
         type: "Group Stage",
         duration: "1 hour"
       },
@@ -61,7 +61,7 @@ export const schedule = {
         time: "12:00 PM",
         stage: "Stage 2",
         game: "Valorant",
-        match: "Crimson Wolves vs Thunder Force",
+        match: "Team Liquid vs GenG",
         type: "Group Stage",
         duration: "2 hours"
       },
@@ -69,7 +69,7 @@ export const schedule = {
         time: "3:00 PM",
         stage: "Main Stage",
         game: "Rocket League",
-        match: "Gravity Defiers vs Sonic Strikers",
+        match: "Complexity vs G2 Esports",
         type: "Group Stage",
         duration: "1.5 hours"
       },
@@ -77,7 +77,7 @@ export const schedule = {
         time: "5:00 PM",
         stage: "Stage 2",
         game: "Super Smash Bros",
-        match: "Frame Perfect vs Combo Breakers",
+        match: "Tweek vs Kameme",
         type: "Group Stage",
         duration: "1 hour"
       },
@@ -85,7 +85,7 @@ export const schedule = {
         time: "7:00 PM",
         stage: "Main Stage",
         game: "Valorant",
-        match: "Team Phoenix vs Shadow Strike",
+        match: "Sentinels vs Paper Rex",
         type: "Group Stage",
         duration: "2 hours"
       }
@@ -99,7 +99,7 @@ export const schedule = {
         time: "10:00 AM",
         stage: "Main Stage",
         game: "Rocket League",
-        match: "Aerial Assassins vs Cosmic Carriers",
+        match: "Karmine Corp vs Moist Esports",
         type: "Group Stage",
         duration: "1.5 hours"
       },
@@ -107,7 +107,7 @@ export const schedule = {
         time: "12:00 PM",
         stage: "Stage 2",
         game: "Super Smash Bros",
-        match: "Elite Warriors vs Tech Masters",
+        match: "MkLeo vs acola",
         type: "Group Stage",
         duration: "1 hour"
       },
@@ -115,7 +115,7 @@ export const schedule = {
         time: "2:00 PM",
         stage: "Main Stage",
         game: "Valorant",
-        match: "Velocity Esports vs Nexus Gaming",
+        match: "Fnatic vs 100 Thieves",
         type: "Group Stage",
         duration: "2 hours"
       },
@@ -123,7 +123,7 @@ export const schedule = {
         time: "5:00 PM",
         stage: "Stage 2",
         game: "Rocket League",
-        match: "Velocity Vipers vs Turbo Titans",
+        match: "Team BDS vs GenG",
         type: "Group Stage",
         duration: "1.5 hours"
       },
@@ -131,7 +131,7 @@ export const schedule = {
         time: "7:00 PM",
         stage: "Main Stage",
         game: "Super Smash Bros",
-        match: "Combo Kings vs Spike Squad",
+        match: "Sparg0 vs Light",
         type: "Group Stage",
         duration: "1 hour"
       }
@@ -145,7 +145,7 @@ export const schedule = {
         time: "10:00 AM",
         stage: "Main Stage",
         game: "Valorant",
-        match: "Shadow Strike vs Crimson Wolves",
+        match: "Paper Rex vs Team Liquid",
         type: "Quarterfinals",
         duration: "2.5 hours"
       },
@@ -153,7 +153,7 @@ export const schedule = {
         time: "1:00 PM",
         stage: "Stage 2",
         game: "Rocket League",
-        match: "Aerial Assassins vs Gravity Defiers",
+        match: "Karmine Corp vs Complexity",
         type: "Quarterfinals",
         duration: "2 hours"
       },
@@ -161,7 +161,7 @@ export const schedule = {
         time: "4:00 PM",
         stage: "Main Stage",
         game: "Super Smash Bros",
-        match: "Elite Warriors vs Frame Perfect",
+        match: "MkLeo vs Tweek",
         type: "Quarterfinals",
         duration: "1.5 hours"
       },
@@ -169,7 +169,7 @@ export const schedule = {
         time: "6:00 PM",
         stage: "Stage 2",
         game: "Valorant",
-        match: "Team Phoenix vs Thunder Force",
+        match: "Sentinels vs GenG",
         type: "Quarterfinals",
         duration: "2.5 hours"
       },
@@ -177,7 +177,7 @@ export const schedule = {
         time: "9:00 PM",
         stage: "Main Stage",
         game: "Rocket League",
-        match: "Velocity Vipers vs Cosmic Carriers",
+        match: "Team BDS vs G2 Esports",
         type: "Quarterfinals",
         duration: "2 hours"
       }
@@ -191,7 +191,7 @@ export const schedule = {
         time: "10:00 AM",
         stage: "Main Stage",
         game: "Super Smash Bros",
-        match: "Combo Kings vs Tech Masters",
+        match: "Sparg0 vs Kameme",
         type: "Semifinals",
         duration: "2 hours"
       },

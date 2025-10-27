@@ -171,9 +171,9 @@ export const venue = {
   },
   
   contact: {
-    phone: "(615) 401-1400",
-    email: "info@musiccitycenter.com",
-    website: "https://musiccitycenter.com",
+    phone: "(615) 555-1400",
+    email: "info@nscs2026.com",
+    website: "https://nscs2026.com",
     nscsContact: "venue@nscs2026.com"
   },
   

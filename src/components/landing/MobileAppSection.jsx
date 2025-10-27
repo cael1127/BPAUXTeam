@@ -221,21 +221,21 @@ const MobileAppSection = () => {
                   <div className="mt-6 space-y-3">
                     <div className="bg-gray-800 rounded-lg p-3">
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-white font-semibold">Team Phoenix</span>
+                        <span className="text-white font-semibold">Sentinels</span>
                         <span className="text-green-400 font-bold">13-7</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-400 text-sm">Velocity Esports</span>
+                        <span className="text-gray-400 text-sm">Fnatic</span>
                         <span className="text-red-400 font-bold">7-13</span>
                       </div>
                     </div>
                     <div className="bg-gray-800 rounded-lg p-3">
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-white font-semibold">Aerial Assassins</span>
+                        <span className="text-white font-semibold">Karmine Corp</span>
                         <span className="text-green-400 font-bold">3-1</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-400 text-sm">Velocity Vipers</span>
+                        <span className="text-gray-400 text-sm">Team BDS</span>
                         <span className="text-red-400 font-bold">1-3</span>
                       </div>
                     </div>

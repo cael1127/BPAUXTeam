@@ -2,187 +2,187 @@ export const teams = {
   valorant: [
     {
       id: 1,
-      name: "Team Phoenix",
-      logo: "🔥",
+      name: "Sentinels",
+      logo: "⚔️",
       region: "North America",
-      players: ["Alex Chen", "Jordan Kim", "Sam Rivera", "Taylor Park", "Casey Lee"],
-      achievements: ["2025 VCT Masters Winner", "3x Regional Champions"],
-      prizeMoney: "$2.3M",
-      color: "from-red-500 to-orange-500"
+      players: ["TenZ", "Shroud", "Zekken", "Sacy", "JohnQT"],
+      achievements: ["VCT Champions 2024", "2x Masters Winner", "Americas #1"],
+      prizeMoney: "$2.8M",
+      color: "from-red-600 to-orange-600"
     },
     {
       id: 2,
-      name: "Velocity Esports",
-      logo: "⚡",
-      region: "Europe",
-      players: ["Marcus Weber", "Elena Volkov", "James O'Connor", "Sofia Andersson", "Liam Murphy"],
-      achievements: ["2025 VCT EMEA Champion", "2x International Finalists"],
-      prizeMoney: "$1.8M",
-      color: "from-blue-500 to-cyan-500"
+      name: "Fnatic",
+      logo: "🦌",
+      region: "EMEA",
+      players: ["Boaster", "Derke", "Alfajer", "Chronicle", "Leo"],
+      achievements: ["VCT Masters Winner", "EMEA Champions", "World #2"],
+      prizeMoney: "$2.4M",
+      color: "from-orange-500 to-yellow-500"
     },
     {
       id: 3,
-      name: "Shadow Strike",
-      logo: "🌙",
-      region: "Asia Pacific",
-      players: ["Hiroshi Tanaka", "Min-jun Park", "Priya Sharma", "Wei Zhang", "Akira Sato"],
-      achievements: ["2025 VCT Pacific Winner", "4x Regional Titles"],
-      prizeMoney: "$2.1M",
-      color: "from-purple-500 to-indigo-500"
+      name: "Paper Rex",
+      logo: "📄",
+      region: "Pacific",
+      players: ["f0rsakeN", "something", "mindfreak", "D4v41", "Benkai"],
+      achievements: ["VCT Pacific Champion", "Masters Finalist", "Pacific #1"],
+      prizeMoney: "$1.9M",
+      color: "from-blue-500 to-cyan-500"
     },
     {
       id: 4,
-      name: "Nexus Gaming",
-      logo: "🔗",
+      name: "100 Thieves",
+      logo: "💯",
       region: "North America",
-      players: ["Ryan Foster", "Maya Patel", "Diego Silva", "Emma Thompson", "Kai Johnson"],
-      achievements: ["2025 VCT Challengers Winner", "Rising Star Team"],
-      prizeMoney: "$950K",
-      color: "from-green-500 to-emerald-500"
+      players: ["Asuna", "Cryocells", "Boostio", "Bang", "Stellar"],
+      achievements: ["VCT Americas Top 4", "Challengers Winner", "Fan Favorite"],
+      prizeMoney: "$1.5M",
+      color: "from-pink-600 to-red-600"
     },
     {
       id: 5,
-      name: "Crimson Wolves",
-      logo: "🐺",
-      region: "Europe",
-      players: ["Nikolai Petrov", "Isabella Rossi", "Oliver Schmidt", "Zara Ahmed", "Felix Berg"],
-      achievements: ["2025 VCT EMEA Runner-up", "Consistent Top 4"],
-      prizeMoney: "$1.2M",
-      color: "from-red-600 to-pink-600"
+      name: "Team Liquid",
+      logo: "💧",
+      region: "EMEA",
+      players: ["nAts", "Jamppi", "Sayf", "Enzo", "Nivera"],
+      achievements: ["EMEA Masters", "VCT Champions Top 4", "Consistent Top Tier"],
+      prizeMoney: "$1.7M",
+      color: "from-blue-600 to-indigo-600"
     },
     {
       id: 6,
-      name: "Thunder Force",
-      logo: "⚡",
-      region: "Asia Pacific",
-      players: ["Yuki Nakamura", "Raj Patel", "Chen Wei", "Sakura Ito", "Arjun Singh"],
-      achievements: ["2025 VCT Pacific Runner-up", "Strong Regional Presence"],
-      prizeMoney: "$1.5M",
-      color: "from-yellow-500 to-orange-500"
+      name: "GenG",
+      logo: "🎯",
+      region: "Pacific",
+      players: ["t3xture", "k1Ng", "Meteor", "Munchkin", "eKo"],
+      achievements: ["Pacific Top 3", "Challengers Elite", "Rising Power"],
+      prizeMoney: "$1.2M",
+      color: "from-purple-600 to-pink-600"
     }
   ],
   rocketleague: [
     {
       id: 7,
-      name: "Aerial Assassins",
-      logo: "🚁",
-      region: "North America",
-      players: ["Jake 'Juke' Martinez", "Sarah 'Boost' Chen", "Mike 'Aerial' Johnson"],
-      achievements: ["2025 RLCS World Champion", "3x Regional Winner"],
-      prizeMoney: "$1.2M",
-      color: "from-blue-500 to-sky-500"
+      name: "Karmine Corp",
+      logo: "👑",
+      region: "Europe",
+      players: ["Vatira", "ExoTiiK", "Atow"],
+      achievements: ["RLCS World Champion 2024", "EU Masters", "Undisputed #1"],
+      prizeMoney: "$1.5M",
+      color: "from-blue-600 to-cyan-600"
     },
     {
       id: 8,
-      name: "Velocity Vipers",
-      logo: "🐍",
+      name: "Team BDS",
+      logo: "🏆",
       region: "Europe",
-      players: ["Lars 'Flick' Andersen", "Emma 'Flip' Wilson", "Tom 'Touch' Brown"],
-      achievements: ["2025 RLCS EU Champion", "2x World Finalists"],
-      prizeMoney: "$980K",
-      color: "from-green-500 to-lime-500"
+      players: ["M0nkey M00n", "Seikoo", "Mist"],
+      achievements: ["RLCS Worlds Finalist", "3x EU Champion", "Consistent Elite"],
+      prizeMoney: "$1.2M",
+      color: "from-purple-600 to-indigo-600"
     },
     {
       id: 9,
-      name: "Cosmic Carriers",
-      logo: "🌌",
-      region: "Oceania",
-      players: ["Alex 'Air' Thompson", "Mia 'Missile' Davis", "Ben 'Boost' Wilson"],
-      achievements: ["2025 RLCS OCE Winner", "Rising Regional Power"],
-      prizeMoney: "$650K",
-      color: "from-purple-500 to-violet-500"
+      name: "Moist Esports",
+      logo: "💧",
+      region: "Europe",
+      players: ["Juicy", "Rehzzy", "aZen"],
+      achievements: ["RLCS Worlds Top 4", "EU Top Tier", "Fan Favorite"],
+      prizeMoney: "$950K",
+      color: "from-blue-500 to-teal-500"
     },
     {
       id: 10,
-      name: "Turbo Titans",
-      logo: "⚡",
+      name: "GenG",
+      logo: "🎯",
       region: "North America",
-      players: ["Chris 'Cannon' Lee", "Lisa 'Launch' Garcia", "Dan 'Dash' Miller"],
-      achievements: ["2025 RLCS NA Runner-up", "Consistent Top 4"],
-      prizeMoney: "$750K",
-      color: "from-orange-500 to-red-500"
+      players: ["Chronic", "AppJack", "Noly"],
+      achievements: ["RLCS NA Champion", "Worlds Qualification", "Strong Mechanics"],
+      prizeMoney: "$880K",
+      color: "from-gray-700 to-gray-900"
     },
     {
       id: 11,
-      name: "Gravity Defiers",
-      logo: "🪐",
-      region: "Europe",
-      players: ["Max 'Momentum' Weber", "Anna 'Arc' Schmidt", "Leo 'Lift' Mueller"],
-      achievements: ["2025 RLCS EU Runner-up", "Strong Mechanical Play"],
-      prizeMoney: "$820K",
-      color: "from-indigo-500 to-blue-500"
+      name: "Complexity",
+      logo: "⚡",
+      region: "North America",
+      players: ["Reysbull", "ajg", "Nass"],
+      achievements: ["NA Top 3", "Worlds Appearance", "Rising Stars"],
+      prizeMoney: "$650K",
+      color: "from-orange-600 to-red-600"
     },
     {
       id: 12,
-      name: "Sonic Strikers",
-      logo: "💨",
-      region: "South America",
-      players: ["Carlos 'Carry' Silva", "Maria 'Momentum' Santos", "Pedro 'Power' Costa"],
-      achievements: ["2025 RLCS SAM Winner", "First International Appearance"],
-      prizeMoney: "$580K",
-      color: "from-cyan-500 to-teal-500"
+      name: "G2 Esports",
+      logo: "🟡",
+      region: "North America",
+      players: ["Atomik", "Chicago", "JKnaps"],
+      achievements: ["RLCS Champions 2022", "Fan Legacy", "Competitive Veterans"],
+      prizeMoney: "$750K",
+      color: "from-yellow-400 to-orange-500"
     }
   ],
   smashbros: [
     {
       id: 13,
-      name: "Elite Warriors",
-      logo: "⚔️",
-      region: "North America",
-      players: ["Alex 'Axe' Chen", "Sarah 'Smasher' Kim", "Mike 'Marth' Johnson"],
-      achievements: ["2025 Smash Ultimate Major Winner", "2x Regional Champion"],
-      prizeMoney: "$450K",
-      color: "from-red-500 to-pink-500"
+      name: "MkLeo",
+      logo: "👑",
+      region: "Mexico",
+      players: ["MkLeo"],
+      achievements: ["EVO 2024 Champion", "#1 World Ranking", "GOAT Status"],
+      prizeMoney: "$420K",
+      color: "from-red-600 to-pink-600"
     },
     {
       id: 14,
-      name: "Combo Kings",
-      logo: "👑",
-      region: "Japan",
-      players: ["Hiroshi 'Hero' Tanaka", "Yuki 'Yoshi' Nakamura", "Akira 'Axe' Sato"],
-      achievements: ["2025 Smash Japan Champion", "3x Major Winner"],
-      prizeMoney: "$520K",
-      color: "from-yellow-500 to-orange-500"
+      name: "Sparg0",
+      logo: "⚔️",
+      region: "Mexico",
+      players: ["Sparg0"],
+      achievements: ["Genesis X Winner", "World #2", "Mechanical Master"],
+      prizeMoney: "$380K",
+      color: "from-blue-600 to-cyan-600"
     },
     {
       id: 15,
-      name: "Tech Masters",
-      logo: "🔧",
-      region: "Europe",
-      players: ["Lars 'Laser' Andersen", "Emma 'Edge' Wilson", "Tom 'Tech' Brown"],
-      achievements: ["2025 Smash EU Champion", "Advanced Tech Innovators"],
-      prizeMoney: "$380K",
-      color: "from-blue-500 to-indigo-500"
+      name: "acola",
+      logo: "🍎",
+      region: "Japan",
+      players: ["acola"],
+      achievements: ["Kagaribi 2024 Winner", "World #3", "Japan's Pride"],
+      prizeMoney: "$350K",
+      color: "from-green-600 to-emerald-600"
     },
     {
       id: 16,
-      name: "Spike Squad",
-      logo: "💥",
-      region: "North America",
-      players: ["Chris 'Crusher' Lee", "Lisa 'Launch' Garcia", "Dan 'Dive' Miller"],
-      achievements: ["2025 Smash NA Runner-up", "Aggressive Playstyle"],
-      prizeMoney: "$320K",
-      color: "from-green-500 to-emerald-500"
+      name: "Light",
+      logo: "💡",
+      region: "United States",
+      players: ["Light"],
+      achievements: ["Major Champion 2024", "Top 5 World", "Consistent Excellence"],
+      prizeMoney: "$280K",
+      color: "from-yellow-400 to-orange-500"
     },
     {
       id: 17,
-      name: "Frame Perfect",
-      logo: "⏱️",
-      region: "Japan",
-      players: ["Minato 'Minute' Suzuki", "Sakura 'Second' Ito", "Kenji 'Kill' Yamamoto"],
-      achievements: ["2025 Smash Japan Runner-up", "Precision Specialists"],
-      prizeMoney: "$410K",
-      color: "from-purple-500 to-violet-500"
+      name: "Tweek",
+      logo: "🌊",
+      region: "United States",
+      players: ["Tweek"],
+      achievements: ["Super Smash Con 2024", "World Top 10", "Technical Wizard"],
+      prizeMoney: "$240K",
+      color: "from-purple-500 to-indigo-600"
     },
     {
       id: 18,
-      name: "Combo Breakers",
-      logo: "🛡️",
-      region: "Europe",
-      players: ["Max 'Mash' Weber", "Anna 'Anti' Schmidt", "Leo 'Lock' Mueller"],
-      achievements: ["2025 Smash EU Runner-up", "Defensive Masters"],
-      prizeMoney: "$290K",
-      color: "from-gray-500 to-slate-500"
+      name: "Kameme",
+      logo: "🎭",
+      region: "Japan",
+      players: ["Kameme"],
+      achievements: ["Umebura Champion", "Japan Top 5", "Style Pioneer"],
+      prizeMoney: "$200K",
+      color: "from-pink-500 to-rose-600"
     }
   ]
 };
@@ -198,8 +198,8 @@ export const getAllTeams = () => {
 
 export const getFeaturedTeams = () => {
   return [
-    teams.valorant[0], // Team Phoenix
-    teams.rocketleague[0], // Aerial Assassins
-    teams.smashbros[0] // Elite Warriors
+    teams.valorant[0], // Sentinels
+    teams.rocketleague[0], // Karmine Corp
+    teams.smashbros[0] // MkLeo
   ];
 };
