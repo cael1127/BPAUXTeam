@@ -98,7 +98,30 @@ const RostersSection = () => {
               <div className={`h-28 sm:h-32 bg-gradient-to-r ${team.color} relative overflow-hidden`}>
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="absolute top-3 sm:top-4 left-3 sm:left-4">
-                  <div className="text-3xl sm:text-4xl mb-1 sm:mb-2">{team.logo}</div>
+                  <div className="mb-1 sm:mb-2 min-h-[2rem] sm:min-h-[2.5rem] flex items-center">
+                    {team.logo.startsWith('/') ? (
+                      <>
+                        <img 
+                          src={team.logo} 
+                          alt={`${team.name} logo`}
+                          className="h-8 sm:h-10 w-auto object-contain"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            if (e.target.nextSibling) {
+                              e.target.nextSibling.style.display = 'flex';
+                            }
+                          }}
+                        />
+                        <div className="hidden text-white font-bold text-sm sm:text-base bg-white/20 backdrop-blur-sm px-2 py-1 rounded">
+                          {team.name}
+                        </div>
+                      </>
+                    ) : (
+                      <span className="text-white font-bold text-sm sm:text-base bg-white/20 backdrop-blur-sm px-2 py-1 rounded">
+                        {team.name}
+                      </span>
+                    )}
+                  </div>
                   <h3 className="text-lg sm:text-xl font-bold text-white">{team.name}</h3>
                   <div className="flex items-center text-white/90 text-xs sm:text-sm">
                     <MapPin className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />

@@ -3,7 +3,7 @@ export const teams = {
     {
       id: 1,
       name: "Sentinels",
-      logo: "⚔️",
+      logo: "/logos/sentinels-logo.svg",
       region: "North America",
       players: ["TenZ", "Shroud", "Zekken", "Sacy", "JohnQT"],
       achievements: ["VCT Champions 2024", "2x Masters Winner", "Americas #1"],
@@ -13,7 +13,7 @@ export const teams = {
     {
       id: 2,
       name: "Fnatic",
-      logo: "🦌",
+      logo: "/logos/fnatic-logo.svg",
       region: "EMEA",
       players: ["Boaster", "Derke", "Alfajer", "Chronicle", "Leo"],
       achievements: ["VCT Masters Winner", "EMEA Champions", "World #2"],
@@ -23,7 +23,7 @@ export const teams = {
     {
       id: 3,
       name: "Paper Rex",
-      logo: "📄",
+      logo: "/logos/paper-rex-logo.svg",
       region: "Pacific",
       players: ["f0rsakeN", "something", "mindfreak", "D4v41", "Benkai"],
       achievements: ["VCT Pacific Champion", "Masters Finalist", "Pacific #1"],
@@ -33,7 +33,7 @@ export const teams = {
     {
       id: 4,
       name: "100 Thieves",
-      logo: "💯",
+      logo: "/logos/100t-logo.svg",
       region: "North America",
       players: ["Asuna", "Cryocells", "Boostio", "Bang", "Stellar"],
       achievements: ["VCT Americas Top 4", "Challengers Winner", "Fan Favorite"],
@@ -43,7 +43,7 @@ export const teams = {
     {
       id: 5,
       name: "Team Liquid",
-      logo: "💧",
+      logo: "/logos/team-liquid-logo.svg",
       region: "EMEA",
       players: ["nAts", "Jamppi", "Sayf", "Enzo", "Nivera"],
       achievements: ["EMEA Masters", "VCT Champions Top 4", "Consistent Top Tier"],
@@ -53,7 +53,7 @@ export const teams = {
     {
       id: 6,
       name: "GenG",
-      logo: "🎯",
+      logo: "/logos/geng-logo.svg",
       region: "Pacific",
       players: ["t3xture", "k1Ng", "Meteor", "Munchkin", "eKo"],
       achievements: ["Pacific Top 3", "Challengers Elite", "Rising Power"],
@@ -65,7 +65,7 @@ export const teams = {
     {
       id: 7,
       name: "Karmine Corp",
-      logo: "👑",
+      logo: "/logos/karmine-logo.svg",
       region: "Europe",
       players: ["Vatira", "ExoTiiK", "Atow"],
       achievements: ["RLCS World Champion 2024", "EU Masters", "Undisputed #1"],
@@ -75,7 +75,7 @@ export const teams = {
     {
       id: 8,
       name: "Team BDS",
-      logo: "🏆",
+      logo: "/logos/bds-logo.svg",
       region: "Europe",
       players: ["M0nkey M00n", "Seikoo", "Mist"],
       achievements: ["RLCS Worlds Finalist", "3x EU Champion", "Consistent Elite"],
@@ -85,7 +85,7 @@ export const teams = {
     {
       id: 9,
       name: "Moist Esports",
-      logo: "💧",
+      logo: "/logos/moist-logo.svg",
       region: "Europe",
       players: ["Juicy", "Rehzzy", "aZen"],
       achievements: ["RLCS Worlds Top 4", "EU Top Tier", "Fan Favorite"],
@@ -95,7 +95,7 @@ export const teams = {
     {
       id: 10,
       name: "GenG",
-      logo: "🎯",
+      logo: "/logos/geng-logo.svg",
       region: "North America",
       players: ["Chronic", "AppJack", "Noly"],
       achievements: ["RLCS NA Champion", "Worlds Qualification", "Strong Mechanics"],
@@ -105,7 +105,7 @@ export const teams = {
     {
       id: 11,
       name: "Complexity",
-      logo: "⚡",
+      logo: "/logos/complexity-logo.svg",
       region: "North America",
       players: ["Reysbull", "ajg", "Nass"],
       achievements: ["NA Top 3", "Worlds Appearance", "Rising Stars"],
@@ -115,7 +115,7 @@ export const teams = {
     {
       id: 12,
       name: "G2 Esports",
-      logo: "🟡",
+      logo: "/logos/g2-logo.svg",
       region: "North America",
       players: ["Atomik", "Chicago", "JKnaps"],
       achievements: ["RLCS Champions 2022", "Fan Legacy", "Competitive Veterans"],
@@ -127,7 +127,7 @@ export const teams = {
     {
       id: 13,
       name: "MkLeo",
-      logo: "👑",
+      logo: "/logos/mkleo-logo.svg",
       region: "Mexico",
       players: ["MkLeo"],
       achievements: ["EVO 2024 Champion", "#1 World Ranking", "GOAT Status"],
@@ -137,7 +137,7 @@ export const teams = {
     {
       id: 14,
       name: "Sparg0",
-      logo: "⚔️",
+      logo: "/logos/sparg0-logo.svg",
       region: "Mexico",
       players: ["Sparg0"],
       achievements: ["Genesis X Winner", "World #2", "Mechanical Master"],
@@ -147,7 +147,7 @@ export const teams = {
     {
       id: 15,
       name: "acola",
-      logo: "🍎",
+      logo: "/logos/acola-logo.svg",
       region: "Japan",
       players: ["acola"],
       achievements: ["Kagaribi 2024 Winner", "World #3", "Japan's Pride"],
@@ -157,7 +157,7 @@ export const teams = {
     {
       id: 16,
       name: "Light",
-      logo: "💡",
+      logo: "/logos/light-logo.svg",
       region: "United States",
       players: ["Light"],
       achievements: ["Major Champion 2024", "Top 5 World", "Consistent Excellence"],
@@ -167,7 +167,7 @@ export const teams = {
     {
       id: 17,
       name: "Tweek",
-      logo: "🌊",
+      logo: "/logos/tweek-logo.svg",
       region: "United States",
       players: ["Tweek"],
       achievements: ["Super Smash Con 2024", "World Top 10", "Technical Wizard"],
@@ -177,7 +177,7 @@ export const teams = {
     {
       id: 18,
       name: "Kameme",
-      logo: "🎭",
+      logo: "/logos/kameme-logo.svg",
       region: "Japan",
       players: ["Kameme"],
       achievements: ["Umebura Champion", "Japan Top 5", "Style Pioneer"],
