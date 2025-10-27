@@ -36,54 +36,55 @@ export const useScrollAnimation = (options = {}) => {
 export const useStaggeredAnimation = (items, delay = 100) => {
   const [visibleItems, setVisibleItems] = useState(new Set());
   const refs = useRef([]);
-  const itemsLengthRef = useRef(items.length);
+  const observersRef = useRef([]);
+  const prevItemsLengthRef = useRef(items.length);
 
+  // Reset when items length changes
   useEffect(() => {
-    // Only reset if the items length actually changed
-    if (itemsLengthRef.current !== items.length) {
+    if (prevItemsLengthRef.current !== items.length) {
       setVisibleItems(new Set());
-      itemsLengthRef.current = items.length;
+      prevItemsLengthRef.current = items.length;
     }
+  }, [items.length]);
 
-    // Return early if no items
-    if (items.length === 0) {
-      return;
-    }
+  // Create observers when refs are set
+  useEffect(() => {
+    // Use requestAnimationFrame to ensure refs are set
+    const rafId = requestAnimationFrame(() => {
+      // Clean up old observers
+      observersRef.current.forEach(observer => {
+        if (observer) observer.disconnect();
+      });
+      observersRef.current = [];
 
-    // Ensure refs array matches items length
-    refs.current = new Array(items.length).fill(null);
-    
-    const observers = items.map((_, index) => {
-      return new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              setVisibleItems(prev => new Set([...prev, index]));
-            }, index * delay);
-          }
-        },
-        {
-          threshold: 0.1,
-          rootMargin: '0px 0px -50px 0px',
-        }
-      );
-    });
-
-    // Wait for refs to be set from JSX
-    const timeoutId = setTimeout(() => {
+      // Create new observers for each ref
       refs.current.forEach((ref, index) => {
-        if (ref && observers[index]) {
-          observers[index].observe(ref);
+        if (ref && index < items.length) {
+          const observer = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                setTimeout(() => {
+                  setVisibleItems(prev => new Set([...prev, index]));
+                }, index * delay);
+                observer.disconnect();
+              }
+            },
+            {
+              threshold: 0.1,
+              rootMargin: '0px 0px -50px 0px',
+            }
+          );
+          
+          observer.observe(ref);
+          observersRef.current[index] = observer;
         }
       });
-    }, 0);
+    });
 
     return () => {
-      clearTimeout(timeoutId);
-      observers.forEach((observer, index) => {
-        if (refs.current[index]) {
-          observer.unobserve(refs.current[index]);
-        }
+      cancelAnimationFrame(rafId);
+      observersRef.current.forEach(observer => {
+        if (observer) observer.disconnect();
       });
     };
   }, [items.length, delay]);
