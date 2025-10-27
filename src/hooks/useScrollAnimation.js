@@ -36,10 +36,20 @@ export const useScrollAnimation = (options = {}) => {
 export const useStaggeredAnimation = (items, delay = 100) => {
   const [visibleItems, setVisibleItems] = useState(new Set());
   const refs = useRef([]);
+  const itemsLengthRef = useRef(items.length);
 
   useEffect(() => {
-    // Reset visible items when items change
-    setVisibleItems(new Set());
+    // Only reset if the items length actually changed
+    if (itemsLengthRef.current !== items.length) {
+      setVisibleItems(new Set());
+      itemsLengthRef.current = items.length;
+    }
+
+    // Return early if no items
+    if (items.length === 0) {
+      return;
+    }
+
     // Ensure refs array matches items length
     refs.current = new Array(items.length).fill(null);
     
@@ -59,13 +69,17 @@ export const useStaggeredAnimation = (items, delay = 100) => {
       );
     });
 
-    refs.current.forEach((ref, index) => {
-      if (ref && observers[index]) {
-        observers[index].observe(ref);
-      }
-    });
+    // Wait for refs to be set from JSX
+    const timeoutId = setTimeout(() => {
+      refs.current.forEach((ref, index) => {
+        if (ref && observers[index]) {
+          observers[index].observe(ref);
+        }
+      });
+    }, 0);
 
     return () => {
+      clearTimeout(timeoutId);
       observers.forEach((observer, index) => {
         if (refs.current[index]) {
           observer.unobserve(refs.current[index]);
