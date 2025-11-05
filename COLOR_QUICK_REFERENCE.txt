@@ -1,0 +1,83 @@
+================================================================================
+QUICK COLOR REFERENCE - Copy & Paste Hex Codes
+================================================================================
+
+PRIMARY BRAND COLORS (Most Important)
+================================================================================
+#8B5CF6  - Primary Purple (Main brand color)
+#EC4899  - Primary Pink (Secondary brand color)
+#3B82F6  - Primary Blue (Accent color)
+
+GRADIENT COLORS (For Buttons & CTAs)
+================================================================================
+#9333EA  - Purple-600 (Gradient start)
+#DB2777  - Pink-600 (Gradient middle)
+#2563EB  - Blue-600 (Gradient end)
+
+HOVER STATES
+================================================================================
+#7C3AED  - Purple-700 (Purple hover)
+#BE185D  - Pink-700 (Pink hover)
+#1D4ED8  - Blue-700 (Blue hover)
+
+TEXT GRADIENT COLORS
+================================================================================
+#C084FC  - Purple-400 (Text gradient start)
+#F472B6  - Pink-400 (Text gradient middle)
+#60A5FA  - Blue-400 (Text gradient end)
+
+BACKGROUND COLORS
+================================================================================
+#581C87  - Purple-900 (Dark backgrounds)
+#1E3A8A  - Blue-900 (Dark backgrounds)
+#111827  - Gray-900 (Dark UI/text)
+#F9FAFB  - Gray-50 (Light backgrounds)
+#FFFFFF  - White
+
+ACCENT COLORS
+================================================================================
+#FACC15  - Yellow-400 (Trophy icons, highlights)
+#EAB308  - Yellow-500 (Achievements)
+#FB7185  - Rose-400 (Hero section effects)
+#FDA4AF  - Rose-300 (Hero section effects)
+#6366F1  - Indigo-500 (Background effects)
+
+GRAY SCALE (Text & UI)
+================================================================================
+#111827  - Gray-900 (Primary text)
+#1F2937  - Gray-800 (Dark UI)
+#374151  - Gray-700 (Borders, hover)
+#4B5563  - Gray-600 (Secondary text)
+#9CA3AF  - Gray-400 (Icons, placeholders)
+#D1D5DB  - Gray-300 (Borders)
+#F3F4F6  - Gray-100 (Light backgrounds)
+#F9FAFB  - Gray-50 (Very light backgrounds)
+
+SPECIAL COLORS (Hero Section)
+================================================================================
+#fed7aa  - Peach/Orange-200 (SVG gradient)
+#fbbf24  - Yellow-400 variant (SVG gradient)
+#f59e0b  - Yellow-500 variant (SVG gradient)
+
+UTILITY COLORS
+================================================================================
+#f1f1f1  - Scrollbar track
+#f0f0f0  - Skeleton/loading gradient
+#e0e0e0  - Skeleton/loading gradient
+
+================================================================================
+MOST COMMONLY USED (Top 10)
+================================================================================
+1. #8B5CF6  - Primary Purple
+2. #EC4899  - Primary Pink
+3. #3B82F6  - Primary Blue
+4. #111827  - Dark Text/Background
+5. #FFFFFF  - White
+6. #9333EA  - Purple-600 (Buttons)
+7. #DB2777  - Pink-600 (Buttons)
+8. #2563EB  - Blue-600 (Buttons)
+9. #F9FAFB  - Light Background
+10. #7C3AED  - Purple-700 (Hover)
+
+================================================================================
+
