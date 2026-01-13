@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gamepad2, MapPin, Phone, Mail, Twitter, Instagram, Youtube, Twitch, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Twitter, Instagram, Youtube, Twitch, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (sectionId) => {
@@ -39,9 +39,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
                 <div className="flex items-center mb-6">
-                  <div className="w-10 h-10 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-lg flex items-center justify-center mr-3">
-                    <Gamepad2 className="w-6 h-6 text-white" />
-                  </div>
+                  <img 
+                    src="/logos/UXLogo.png" 
+                    alt="NSCS Logo" 
+                    className="h-10 w-auto mr-3"
+                  />
                   <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
                     NSCS 2026
                   </span>
